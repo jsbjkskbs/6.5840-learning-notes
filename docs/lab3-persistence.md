@@ -574,22 +574,22 @@ AppendEntries中
 
 以这个逻辑而言
   1. If args.PrevLogIndex >= len(Follower.log) [conflict]
-    1. 如果Follower的最后一个日志与Leader对应索引的日志不匹配
-      - Follower直接返回XLen，双方不能确定该日志是否匹配
-      - 双方显然会发现最后一个日志不匹配，此时为条件b.
-    2. 如果Follower的最后一个日志与Leader对应索引的日志匹配
-      - Follower直接返回XLen，双方不能确定该日志是否匹配
-      - Follower显然会发现最后一个日志匹配，追加日志，此时已同步
+     1. 如果Follower的最后一个日志与Leader对应索引的日志不匹配
+        - Follower直接返回XLen，双方不能确定该日志是否匹配
+        - 双方显然会发现最后一个日志不匹配，此时为条件b.
+     2. 如果Follower的最后一个日志与Leader对应索引的日志匹配
+        - Follower直接返回XLen，双方不能确定该日志是否匹配
+        - Follower显然会发现最后一个日志匹配，追加日志，此时已同步
   2. !a. && Follower.log[args.PrevLogIndex].Term != args.PrevLogTerm [conflict]
-    1. Follower
-      1. 返回与冲突日志任期相同的最早日志索引
-    2. Leader
-      1. 检查是否存在该任期日志
-        - 存在，返回该任期及其之后的全部日志
-        - 不存在，返回该索引及其之后的全部日志
+     1. Follower
+        1. 返回与冲突日志任期相同的最早日志索引
+     2. Leader
+        1. 检查是否存在该任期日志
+           - 存在，返回该任期及其之后的全部日志
+           - 不存在，返回该索引及其之后的全部日志
 
 不可能出现有多个 不同任期 的 日志冲突的情况：
-  1. (Assumption)假设Follower存在两个 不同任期 的日志A、B（Term~A~<Term~B~），且均与Leader对应索引的日志冲突
+  1. (Assumption)假设Follower存在两个 不同任期 的日志A、B（Term<sub>A</sub><Term<sub>B</sub>），且均与Leader对应索引的日志冲突
   2. (Condition)只有集群所共识的日志才能保存下来，简单来说，是不会在其他任期被删除
   3. (Condition)Leader必然有前任Leader中所保存的日志
   4. (Condition)Leader想要追加日志，Follower必须检查是否有冲突日志
