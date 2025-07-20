@@ -131,21 +131,21 @@ Raft选择保留原始Term编号的做法带来了多重优势。首先，它使
 
 > [!note]
 > 
-> <strong>
-> not stay up long enough to poop out（从来不会疲倦）
-> </strong>
 > 
-> <strong>
-> not stay up long enough to do（从来不会）
-> </strong>
+> **not stay up long enough to poop out（从来不会疲倦）**
 > 
-> <strong>
-> poop out（精疲力尽）
-> </strong>
 > 
-> <strong>
-> not stay up long enough to win an election（从来不会赢得选举）
-> </strong>
+> 
+> **not stay up long enough to do（从来不会）**
+> 
+> 
+> 
+> **poop out（精疲力尽）**
+> 
+> 
+> 
+> **not stay up long enough to win an election（从来不会赢得选举）**
+> 
 
 
 Leader Election是Raft中时间敏感性最高的环节之一。为了确保Raft能够持续有效地选举并维持一个稳定的Leader，系统必须满足一系列严格的时间要求。具体而言，这些要求通过以下不等式体现：
@@ -153,6 +153,7 @@ Leader Election是Raft中时间敏感性最高的环节之一。为了确保Raft
 ``` math
 broadcastTime << electionTimeout << MTBF
 ``` 
+
 
 在此不等式中，broadcastTime代表服务器向集群中所有服务器并行发送RPC请求并接收其响应所需的平均时间。这个时间量主要取决于网络延迟和存储技术的性能。为了保持Leader的稳定性，broadcastTime应当远小于electionTimeout，以确保Leader能够频繁地发送心跳消息，从而有效阻止Follower节点错误地启动新的选举过程。此外，采用随机化的electionTimeout方法还进一步降低了分裂投票的风险，提高了选举过程的稳定性和可靠性。
 

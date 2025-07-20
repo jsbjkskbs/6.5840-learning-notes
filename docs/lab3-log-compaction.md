@@ -133,7 +133,9 @@ func Make(peers []*labrpc.ClientEnd, me int, persister *Persister, applyCh chan 
 日志压缩机制使得集群的Log不能直接用逻辑索引访问，因此需要进行索引变换（类似逻辑地址与物理地址）
 我们很容易得出以下公式（需保证物理索引不为负数）
 
-`LogicalIndex = LastIncludedIndex + PhysicalIndex`
+``` math
+LogicalIndex = LastIncludedIndex + PhysicalIndex
+```
 
 容易得到以下代码：
 
