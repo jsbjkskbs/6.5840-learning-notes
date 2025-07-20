@@ -573,14 +573,14 @@ AppendEntries中
   - Follower日志过短：Follower需迅速追加Leader在该索引后的全部日志
 
 以这个逻辑而言
-  1. If args.PrevLogIndex >= len(Follower.log) [conflict]
+  1. If args.PrevLogIndex >= len(Follower.log) [conflict][条件a]
      1. 如果Follower的最后一个日志与Leader对应索引的日志不匹配
         - Follower直接返回XLen，双方不能确定该日志是否匹配
         - 双方显然会发现最后一个日志不匹配，此时为条件b.
      2. 如果Follower的最后一个日志与Leader对应索引的日志匹配
         - Follower直接返回XLen，双方不能确定该日志是否匹配
         - Follower显然会发现最后一个日志匹配，追加日志，此时已同步
-  2. !a. && Follower.log[args.PrevLogIndex].Term != args.PrevLogTerm [conflict]
+  2. !a. && Follower.log[args.PrevLogIndex].Term != args.PrevLogTerm [conflict][条件b]
      1. Follower
         1. 返回与冲突日志任期相同的最早日志索引
      2. Leader
