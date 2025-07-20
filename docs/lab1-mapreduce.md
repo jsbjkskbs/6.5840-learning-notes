@@ -444,7 +444,9 @@ func (c *Coordinator) RequestTask(args *Args, reply *Reply) error {
 当Worker告知任务完成时：
   - 如果任务与Worker的PID对照相等，则将对应任务状态标记为Done
   - 如果任务与Worker的PID对照不相等，说明Worker完成的是超时任务，则无视请求
+
 **<s>为防止意外，无脑加锁----------------------------------------其实不加锁也是可以的</s>**
+
 代码如下：
 ``` go
 func (c *Coordinator) ReportTask(args *Args, reply *Reply) error {
