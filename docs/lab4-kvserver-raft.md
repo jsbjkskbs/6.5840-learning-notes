@@ -17,7 +17,7 @@ You'll also need to implement `Put()`, `Append()`, and `Get()` RPC handlers in `
 
 You have completed this task when you **reliably** pass the first test in the test suite: "One client". 
 
-> [!tip] Hints
+> [!tip]
 > <ol><strong>
 > <li>
 > After calling Start(), your  kvservers will need to wait for Raft to complete agreement. Commands that have been agreed upon arrive on the applyCh. Your code will need to keep reading applyCh while Put(), Append(), and Get() handlers submit commands to the Raft log using Start(). Beware of deadlock between the kvserver and its Raft library.  
@@ -37,7 +37,7 @@ You have completed this task when you **reliably** pass the first test in the te
 
 Add code to handle failures, and to cope with duplicate `Clerk` requests, including situations where the `Clerk` sends a request to a kvserver leader in one term, times out waiting for a reply, and re-sends the request to a new leader in another term. The request should execute just once. These notes include guidance on <a href="https://pdos.csail.mit.edu/6.824/notes/l-raft-QA.txt">duplicate detection</a>. Your code should pass the `go test -run 4A` tests.
 
-> [!tip] Hints
+> [!tip]
 > <ol><strong>
 > <li>
 > Your solution needs to handle a leader that has called Start() for a Clerk's RPC, but loses its leadership before the request is committed to the log. In this case you should arrange for the Clerk to re-send the request to other servers until it finds the new leader. One way to do this is for the server to detect that it has lost leadership, by noticing that Raft's term has changed or a different request has appeared at the index returned by Start(). If the ex-leader is partitioned by itself, it won't know about new leaders; but any client in the same partition won't be able to talk to a new leader either, so it's OK in this case for the server and client to wait indefinitely until the partition heals.  
@@ -57,7 +57,7 @@ Add code to handle failures, and to cope with duplicate `Clerk` requests, includ
 
 Modify your kvserver so that it detects when the persisted Raft state grows too large, and then hands a snapshot to Raft.  When a kvserver server restarts, it should read the snapshot from persister and restore its state from the snapshot.
 
-> [!tip] Hints
+> [!tip]
 > <ol><strong>
 > <li>
 > Think about when a kvserver should snapshot its state and what should be included in the snapshot. Raft stores each snapshot in the persister object using <code>Save()</code>, along with corresponding Raft state. You can read the latest stored snapshot using <code>ReadSnapshot()</code>.

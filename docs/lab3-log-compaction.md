@@ -12,7 +12,7 @@ The index argument indicates the highest log entry that's reflected in the snaps
 
 **Implement Snapshot() and the InstallSnapshot RPC, as well as the changes to Raft to support these (e.g, operation with a trimmed log).  Your solution is complete when it passes the 3D tests (and all the previous Lab 3 tests).**
 
-> [!tip] Hints
+> [!tip]
 > <ul><strong>
 > <li>
 > git pull to make sure you have the latest software.

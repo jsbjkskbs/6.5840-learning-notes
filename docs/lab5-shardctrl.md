@@ -18,7 +18,7 @@ The very first configuration should be numbered zero. It should contain no group
 
 > You must implement the interface specified above in client.go and server.go in the shardctrler/ directory. Your shardctrler must be fault-tolerant, using your Raft library from Lab 3/4. You have completed this task when you pass all the tests in shardctrler/.
 
-> [!tip] Hints
+> [!tip]
 > <ol><strong>
 > <li>
 > Start with a stripped-down copy of your kvraft server.

@@ -6,7 +6,7 @@
 ## 2. 任务
 Implement the leader and follower code to append new log entries, so that the go test -run 3B tests pass.
 
-> [!tip] Hints
+> [!tip]
 > <ol><strong>
 > <li>
 > Run git pull to get the latest lab software.

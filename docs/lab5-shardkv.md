@@ -18,7 +18,7 @@ You will need to make your servers watch for configuration changes, and when one
 > 
 > **NOTE**: Servers will need to send RPCs to each other in order to transfer shards during configuration changes. The shardctrler's `Config` struct contains server names, but you need a `labrpc.ClientEnd` in order to send an RPC. You should use the `make_end()` function passed to `StartServer()` to turn a server name into a `ClientEnd`. `shardkv/client.go` contains code that does this.
 
-> [!tip] Hints
+> [!tip]
 > <ul>
 > <li>
 > Process re-configurations one at a time, in order.

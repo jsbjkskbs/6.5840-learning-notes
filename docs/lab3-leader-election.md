@@ -3,7 +3,7 @@
 ## 1. 任务
 Implement Raft leader election and heartbeats (AppendEntries RPCs with no log entries). The goal for Part 3A is for a single leader to be elected, for the leader to remain the leader if there are no failures, and for a new leader to take over if the old leader fails or if packets to/from the old leader are lost. Run go test -run 3A  to test your 3A code.
 
-> [!tip] Hints
+> [!tip]
 > <ol><strong>
 > <li>
 > You can't easily run your Raft implementation directly; instead you should run it by way of the tester, i.e. go test -run 3A .

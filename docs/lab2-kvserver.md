@@ -7,12 +7,14 @@ Clients can send three different RPCs to the key/value server: Put(key, value), 
 
 Your server must arrange that application calls   to Clerk Get/Put/Append methods be linearizable. If client requests aren't concurrent, each client Get/Put/Append call should observe the modifications to the state implied by the preceding sequence of calls. For concurrent calls, the return values and final state must be the same as if the operations had executed one at a time in some order. Calls are concurrent if they overlap in time: for example, if client X calls Clerk.Put(), and client Y calls Clerk.Append(), and then client X's call returns. A call must observe the effects of all calls that have completed before the call starts.
 
->[!tip] Key/value server with no network failures (<a href="https://pdos.csail.mit.edu/6.824/labs/guidance.html">easy</a>)
+>[!tip] 
+> <h3>Key/value server with no network failures (<a href="https://pdos.csail.mit.edu/6.824/labs/guidance.html">easy</a>)</h3>
 > Your first task is to implement a solution that works when there are no dropped messages. You'll need to add RPC-sending code to the Clerk Put/Append/Get methods in client.go, and implement Put, Append() and Get() RPC handlers in server.go. You have completed this task when you pass the first two tests in the test suite: "one client" and "many clients".
 > - <strong>Hint: Check that your code is race-free using <code>go test -race</code>.</strong>
 
 
->[!tip] Key/value server with dropped messages (<a href="https://pdos.csail.mit.edu/6.824/labs/guidance.html">easy</a>)
+>[!tip] 
+> <h3>Key/value server with dropped messages (<a href="https://pdos.csail.mit.edu/6.824/labs/guidance.html">easy</a>)</h3>
 > Now you should modify your solution to continue in the face of dropped messages (e.g., RPC requests and RPC replies). If a message was lost, then the client's ck.server.Call() will return false (more precisely, Call() waits for a reply message for a timeout interval, and returns false if no reply arrives within that time). One problem you'll face is that a Clerk may have to send an RPC multiple times until it succeeds. Each call to Clerk.Put() or Clerk.Append(), however, should result in just a single execution, so you will have to ensure that the re-send doesn't result in the server executing the request twice.
 > 
 > Add code to Clerk to retry if doesn't receive a reply, and to server.go to filter duplicates if the operation requires it. These notes include guidance on <a href="https://pdos.csail.mit.edu/6.824/notes/l-raft-QA.txt">duplicate detection.</a>
