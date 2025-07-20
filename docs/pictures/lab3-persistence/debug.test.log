@@ -1,0 +1,1336 @@
+2024/08/01 22:49:39 server start: 0
+2024/08/01 22:49:39 DEBUG[744]: raft.DServerFMT{id:0, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:39 DEBUG[744]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:49:39 server start: 1
+2024/08/01 22:49:39 DEBUG[462]: raft.DServerFMT{id:1, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:39 DEBUG[462]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:49:39 server start: 2
+2024/08/01 22:49:39 DEBUG[860]: raft.DServerFMT{id:2, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:39 DEBUG[860]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+Test (3C): basic persistence ...
+2024/08/01 22:49:39 New Leader Occured: 1
+2024/08/01 22:49:39 DEBUG[351]: raft.DServerFMT{id:1, term:1, votedFor:1, commitIndex:0, lastApplied:0, voteCount:2, role:"Leader"}
+2024/08/01 22:49:39 DEBUG[351]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:49:39 Server killed:0
+2024/08/01 22:49:39 DEBUG[256]: raft.DServerFMT{id:0, term:1, votedFor:1, commitIndex:1, lastApplied:1, voteCount:0, role:"Follower"}
+2024/08/01 22:49:39 DEBUG[256]: raft.DLogSummary{length:2, payload:"1e6a4fe7d0c12e89e5f33782675553de"}
+2024/08/01 22:49:39 server start: 0
+2024/08/01 22:49:39 DEBUG[008]: raft.DServerFMT{id:0, term:1, votedFor:1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:39 DEBUG[008]: raft.DLogSummary{length:2, payload:"1e6a4fe7d0c12e89e5f33782675553de"}
+2024/08/01 22:49:39 Server killed:1
+2024/08/01 22:49:39 DEBUG[466]: raft.DServerFMT{id:1, term:1, votedFor:1, commitIndex:1, lastApplied:1, voteCount:2, role:"Leader"}
+2024/08/01 22:49:39 DEBUG[466]: raft.DLogSummary{length:2, payload:"1e6a4fe7d0c12e89e5f33782675553de"}
+2024/08/01 22:49:39 server start: 1
+2024/08/01 22:49:39 DEBUG[261]: raft.DServerFMT{id:1, term:1, votedFor:1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:39 DEBUG[261]: raft.DLogSummary{length:2, payload:"1e6a4fe7d0c12e89e5f33782675553de"}
+2024/08/01 22:49:39 Server killed:2
+2024/08/01 22:49:39 DEBUG[522]: raft.DServerFMT{id:2, term:1, votedFor:1, commitIndex:1, lastApplied:1, voteCount:0, role:"Follower"}
+2024/08/01 22:49:39 DEBUG[522]: raft.DLogSummary{length:2, payload:"1e6a4fe7d0c12e89e5f33782675553de"}
+2024/08/01 22:49:39 server start: 2
+2024/08/01 22:49:39 DEBUG[568]: raft.DServerFMT{id:2, term:1, votedFor:1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:39 DEBUG[568]: raft.DLogSummary{length:2, payload:"1e6a4fe7d0c12e89e5f33782675553de"}
+2024/08/01 22:49:40 New Leader Occured: 1
+2024/08/01 22:49:40 DEBUG[251]: raft.DServerFMT{id:1, term:2, votedFor:1, commitIndex:0, lastApplied:0, voteCount:2, role:"Leader"}
+2024/08/01 22:49:40 DEBUG[251]: raft.DLogSummary{length:2, payload:"1e6a4fe7d0c12e89e5f33782675553de"}
+2024/08/01 22:49:40 Server killed:1
+2024/08/01 22:49:40 DEBUG[395]: raft.DServerFMT{id:1, term:2, votedFor:1, commitIndex:2, lastApplied:2, voteCount:2, role:"Leader"}
+2024/08/01 22:49:40 DEBUG[395]: raft.DLogSummary{length:3, payload:"b6e974f67713ec59f883236e04b6f3ca"}
+2024/08/01 22:49:40 server start: 1
+2024/08/01 22:49:40 DEBUG[937]: raft.DServerFMT{id:1, term:2, votedFor:1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:40 DEBUG[937]: raft.DLogSummary{length:3, payload:"b6e974f67713ec59f883236e04b6f3ca"}
+2024/08/01 22:49:41 New Leader Occured: 0
+2024/08/01 22:49:41 DEBUG[102]: raft.DServerFMT{id:0, term:3, votedFor:0, commitIndex:2, lastApplied:2, voteCount:2, role:"Leader"}
+2024/08/01 22:49:41 DEBUG[102]: raft.DLogSummary{length:3, payload:"b6e974f67713ec59f883236e04b6f3ca"}
+2024/08/01 22:49:42 New Leader Occured: 2
+2024/08/01 22:49:42 DEBUG[715]: raft.DServerFMT{id:2, term:4, votedFor:2, commitIndex:3, lastApplied:3, voteCount:2, role:"Leader"}
+2024/08/01 22:49:42 DEBUG[715]: raft.DLogSummary{length:4, payload:"11be86c679466d65926eb487bd87bb33"}
+2024/08/01 22:49:42 Server killed:0
+2024/08/01 22:49:42 DEBUG[964]: raft.DServerFMT{id:0, term:3, votedFor:0, commitIndex:3, lastApplied:3, voteCount:2, role:"Leader"}
+2024/08/01 22:49:42 DEBUG[964]: raft.DLogSummary{length:4, payload:"11be86c679466d65926eb487bd87bb33"}
+2024/08/01 22:49:42 server start: 0
+2024/08/01 22:49:42 DEBUG[375]: raft.DServerFMT{id:0, term:3, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:42 DEBUG[375]: raft.DLogSummary{length:4, payload:"11be86c679466d65926eb487bd87bb33"}
+2024/08/01 22:49:43 Server killed:0
+2024/08/01 22:49:43 DEBUG[825]: raft.DServerFMT{id:0, term:4, votedFor:-1, commitIndex:4, lastApplied:4, voteCount:0, role:"Follower"}
+2024/08/01 22:49:43 DEBUG[825]: raft.DLogSummary{length:5, payload:"dd4ba842779c5cb9b3b2465339c57a5f"}
+2024/08/01 22:49:43 server start: 0
+2024/08/01 22:49:43 DEBUG[598]: raft.DServerFMT{id:0, term:4, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:43 DEBUG[598]: raft.DLogSummary{length:5, payload:"dd4ba842779c5cb9b3b2465339c57a5f"}
+  ... Passed --   4.0  3   80   20466    6
+2024/08/01 22:49:43 Server killed:0
+2024/08/01 22:49:43 DEBUG[469]: raft.DServerFMT{id:0, term:4, votedFor:-1, commitIndex:6, lastApplied:6, voteCount:0, role:"Follower"}
+2024/08/01 22:49:43 DEBUG[469]: raft.DLogSummary{length:7, payload:"7fd62f1dd89484d97b6eacb48e3d608a"}
+2024/08/01 22:49:43 Server killed:1
+2024/08/01 22:49:43 DEBUG[030]: raft.DServerFMT{id:1, term:4, votedFor:2, commitIndex:6, lastApplied:6, voteCount:0, role:"Follower"}
+2024/08/01 22:49:43 DEBUG[030]: raft.DLogSummary{length:7, payload:"7fd62f1dd89484d97b6eacb48e3d608a"}
+2024/08/01 22:49:43 Server killed:2
+2024/08/01 22:49:43 DEBUG[257]: raft.DServerFMT{id:2, term:4, votedFor:2, commitIndex:6, lastApplied:6, voteCount:2, role:"Leader"}
+2024/08/01 22:49:43 DEBUG[257]: raft.DLogSummary{length:7, payload:"7fd62f1dd89484d97b6eacb48e3d608a"}
+2024/08/01 22:49:43 server start: 0
+2024/08/01 22:49:43 DEBUG[836]: raft.DServerFMT{id:0, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:43 DEBUG[836]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:49:43 server start: 1
+2024/08/01 22:49:43 DEBUG[836]: raft.DServerFMT{id:1, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:43 DEBUG[836]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:49:43 server start: 2
+2024/08/01 22:49:43 DEBUG[076]: raft.DServerFMT{id:2, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:43 DEBUG[076]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:49:43 server start: 3
+2024/08/01 22:49:43 DEBUG[303]: raft.DServerFMT{id:3, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:43 DEBUG[303]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:49:43 server start: 4
+2024/08/01 22:49:43 DEBUG[193]: raft.DServerFMT{id:4, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:43 DEBUG[193]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+Test (3C): more persistence ...
+2024/08/01 22:49:43 New Leader Occured: 4
+2024/08/01 22:49:43 DEBUG[735]: raft.DServerFMT{id:4, term:1, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:49:43 DEBUG[735]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:49:44 Server killed:0
+2024/08/01 22:49:44 DEBUG[741]: raft.DServerFMT{id:0, term:1, votedFor:4, commitIndex:1, lastApplied:1, voteCount:0, role:"Follower"}
+2024/08/01 22:49:44 DEBUG[741]: raft.DLogSummary{length:2, payload:"1e6a4fe7d0c12e89e5f33782675553de"}
+2024/08/01 22:49:44 server start: 0
+2024/08/01 22:49:44 DEBUG[004]: raft.DServerFMT{id:0, term:1, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:44 DEBUG[004]: raft.DLogSummary{length:2, payload:"1e6a4fe7d0c12e89e5f33782675553de"}
+2024/08/01 22:49:44 Server killed:1
+2024/08/01 22:49:44 DEBUG[759]: raft.DServerFMT{id:1, term:1, votedFor:4, commitIndex:1, lastApplied:1, voteCount:0, role:"Follower"}
+2024/08/01 22:49:44 DEBUG[759]: raft.DLogSummary{length:2, payload:"1e6a4fe7d0c12e89e5f33782675553de"}
+2024/08/01 22:49:44 server start: 1
+2024/08/01 22:49:44 DEBUG[795]: raft.DServerFMT{id:1, term:1, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:44 DEBUG[795]: raft.DLogSummary{length:2, payload:"1e6a4fe7d0c12e89e5f33782675553de"}
+2024/08/01 22:49:45 Server killed:2
+2024/08/01 22:49:45 DEBUG[882]: raft.DServerFMT{id:2, term:3, votedFor:2, commitIndex:2, lastApplied:2, voteCount:1, role:"Candidate"}
+2024/08/01 22:49:45 DEBUG[882]: raft.DLogSummary{length:3, payload:"04336c0948b833af461f8bae2abd4e16"}
+2024/08/01 22:49:45 server start: 2
+2024/08/01 22:49:45 DEBUG[795]: raft.DServerFMT{id:2, term:1, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:45 DEBUG[795]: raft.DLogSummary{length:3, payload:"04336c0948b833af461f8bae2abd4e16"}
+2024/08/01 22:49:45 New Leader Occured: 2
+2024/08/01 22:49:45 DEBUG[892]: raft.DServerFMT{id:2, term:6, votedFor:2, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:49:45 DEBUG[892]: raft.DLogSummary{length:3, payload:"04336c0948b833af461f8bae2abd4e16"}
+2024/08/01 22:49:45 DEBUG[169]: raft.DXConflict{id:0, role:"Follower", XTerm:6, XIndex:0, XLen:2, PrevLogIndex:2, PrevLogTerm:1, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:45 DEBUG[704]: raft.DXConflict{id:2, role:"Leader", XTerm:6, XIndex:0, XLen:2, PrevLogIndex:2, PrevLogTerm:1, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:45 DEBUG[426]: raft.DXConflict{id:1, role:"Follower", XTerm:6, XIndex:0, XLen:2, PrevLogIndex:2, PrevLogTerm:1, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:45 DEBUG[034]: raft.DXConflict{id:2, role:"Leader", XTerm:6, XIndex:0, XLen:2, PrevLogIndex:2, PrevLogTerm:1, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:47 Server killed:3
+2024/08/01 22:49:47 DEBUG[337]: raft.DServerFMT{id:3, term:6, votedFor:3, commitIndex:4, lastApplied:4, voteCount:2, role:"Candidate"}
+2024/08/01 22:49:47 DEBUG[337]: raft.DLogSummary{length:5, payload:"61e072ae02894d18acf19c2b691ee7f4"}
+2024/08/01 22:49:47 server start: 3
+2024/08/01 22:49:47 DEBUG[942]: raft.DServerFMT{id:3, term:6, votedFor:3, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:47 DEBUG[942]: raft.DLogSummary{length:5, payload:"61e072ae02894d18acf19c2b691ee7f4"}
+2024/08/01 22:49:47 Server killed:4
+2024/08/01 22:49:47 DEBUG[738]: raft.DServerFMT{id:4, term:6, votedFor:3, commitIndex:4, lastApplied:4, voteCount:3, role:"Follower"}
+2024/08/01 22:49:47 DEBUG[738]: raft.DLogSummary{length:5, payload:"61e072ae02894d18acf19c2b691ee7f4"}
+2024/08/01 22:49:47 server start: 4
+2024/08/01 22:49:47 DEBUG[456]: raft.DServerFMT{id:4, term:6, votedFor:3, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:47 DEBUG[456]: raft.DLogSummary{length:5, payload:"61e072ae02894d18acf19c2b691ee7f4"}
+2024/08/01 22:49:48 Server killed:0
+2024/08/01 22:49:48 DEBUG[617]: raft.DServerFMT{id:0, term:8, votedFor:0, commitIndex:5, lastApplied:5, voteCount:1, role:"Candidate"}
+2024/08/01 22:49:48 DEBUG[617]: raft.DLogSummary{length:6, payload:"adfc3d6a683e0eaa6f5eed2fa09bd800"}
+2024/08/01 22:49:48 server start: 0
+2024/08/01 22:49:48 DEBUG[883]: raft.DServerFMT{id:0, term:6, votedFor:2, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:48 DEBUG[883]: raft.DLogSummary{length:6, payload:"adfc3d6a683e0eaa6f5eed2fa09bd800"}
+2024/08/01 22:49:48 New Leader Occured: 0
+2024/08/01 22:49:48 DEBUG[135]: raft.DServerFMT{id:0, term:11, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:49:48 DEBUG[135]: raft.DLogSummary{length:6, payload:"adfc3d6a683e0eaa6f5eed2fa09bd800"}
+2024/08/01 22:49:48 DEBUG[985]: raft.DXConflict{id:4, role:"Follower", XTerm:11, XIndex:0, XLen:5, PrevLogIndex:5, PrevLogTerm:6, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:48 DEBUG[023]: raft.DXConflict{id:0, role:"Leader", XTerm:11, XIndex:0, XLen:5, PrevLogIndex:5, PrevLogTerm:6, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:48 DEBUG[129]: raft.DXConflict{id:3, role:"Follower", XTerm:11, XIndex:0, XLen:5, PrevLogIndex:5, PrevLogTerm:6, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:48 DEBUG[477]: raft.DXConflict{id:0, role:"Leader", XTerm:11, XIndex:0, XLen:5, PrevLogIndex:5, PrevLogTerm:6, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:51 Server killed:1
+2024/08/01 22:49:51 DEBUG[739]: raft.DServerFMT{id:1, term:11, votedFor:-1, commitIndex:7, lastApplied:7, voteCount:1, role:"Follower"}
+2024/08/01 22:49:51 DEBUG[739]: raft.DLogSummary{length:8, payload:"4e3d4b824aa7425eabf114abcd2ae60b"}
+2024/08/01 22:49:51 server start: 1
+2024/08/01 22:49:51 DEBUG[795]: raft.DServerFMT{id:1, term:11, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:51 DEBUG[795]: raft.DLogSummary{length:8, payload:"4e3d4b824aa7425eabf114abcd2ae60b"}
+2024/08/01 22:49:51 Server killed:2
+2024/08/01 22:49:51 DEBUG[051]: raft.DServerFMT{id:2, term:11, votedFor:-1, commitIndex:7, lastApplied:7, voteCount:3, role:"Follower"}
+2024/08/01 22:49:51 DEBUG[051]: raft.DLogSummary{length:8, payload:"4e3d4b824aa7425eabf114abcd2ae60b"}
+2024/08/01 22:49:51 server start: 2
+2024/08/01 22:49:51 DEBUG[268]: raft.DServerFMT{id:2, term:11, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:51 DEBUG[268]: raft.DLogSummary{length:8, payload:"4e3d4b824aa7425eabf114abcd2ae60b"}
+2024/08/01 22:49:52 Server killed:3
+2024/08/01 22:49:52 DEBUG[783]: raft.DServerFMT{id:3, term:13, votedFor:3, commitIndex:8, lastApplied:8, voteCount:1, role:"Candidate"}
+2024/08/01 22:49:52 DEBUG[783]: raft.DLogSummary{length:9, payload:"ec241782d01fce3137a6dd4feb2c39e4"}
+2024/08/01 22:49:52 server start: 3
+2024/08/01 22:49:52 DEBUG[968]: raft.DServerFMT{id:3, term:11, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:52 DEBUG[968]: raft.DLogSummary{length:9, payload:"ec241782d01fce3137a6dd4feb2c39e4"}
+2024/08/01 22:49:52 New Leader Occured: 3
+2024/08/01 22:49:52 DEBUG[410]: raft.DServerFMT{id:3, term:16, votedFor:3, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:49:52 DEBUG[410]: raft.DLogSummary{length:9, payload:"ec241782d01fce3137a6dd4feb2c39e4"}
+2024/08/01 22:49:52 DEBUG[978]: raft.DXConflict{id:1, role:"Follower", XTerm:16, XIndex:0, XLen:8, PrevLogIndex:8, PrevLogTerm:11, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:52 DEBUG[023]: raft.DXConflict{id:3, role:"Leader", XTerm:16, XIndex:0, XLen:8, PrevLogIndex:8, PrevLogTerm:11, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:52 DEBUG[101]: raft.DXConflict{id:2, role:"Follower", XTerm:16, XIndex:0, XLen:8, PrevLogIndex:8, PrevLogTerm:11, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:52 DEBUG[251]: raft.DXConflict{id:3, role:"Leader", XTerm:16, XIndex:0, XLen:8, PrevLogIndex:8, PrevLogTerm:11, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:53 Server killed:4
+2024/08/01 22:49:53 DEBUG[367]: raft.DServerFMT{id:4, term:16, votedFor:-1, commitIndex:10, lastApplied:10, voteCount:1, role:"Follower"}
+2024/08/01 22:49:53 DEBUG[367]: raft.DLogSummary{length:11, payload:"1735ab55fc6c37eb76f948bc9728ce58"}
+2024/08/01 22:49:53 server start: 4
+2024/08/01 22:49:53 DEBUG[197]: raft.DServerFMT{id:4, term:16, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:53 DEBUG[197]: raft.DLogSummary{length:11, payload:"1735ab55fc6c37eb76f948bc9728ce58"}
+2024/08/01 22:49:53 Server killed:0
+2024/08/01 22:49:53 DEBUG[930]: raft.DServerFMT{id:0, term:16, votedFor:-1, commitIndex:10, lastApplied:10, voteCount:3, role:"Follower"}
+2024/08/01 22:49:53 DEBUG[930]: raft.DLogSummary{length:11, payload:"1735ab55fc6c37eb76f948bc9728ce58"}
+2024/08/01 22:49:53 server start: 0
+2024/08/01 22:49:53 DEBUG[870]: raft.DServerFMT{id:0, term:16, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:53 DEBUG[870]: raft.DLogSummary{length:11, payload:"1735ab55fc6c37eb76f948bc9728ce58"}
+2024/08/01 22:49:54 Server killed:1
+2024/08/01 22:49:54 DEBUG[140]: raft.DServerFMT{id:1, term:19, votedFor:1, commitIndex:11, lastApplied:11, voteCount:1, role:"Candidate"}
+2024/08/01 22:49:54 DEBUG[140]: raft.DLogSummary{length:12, payload:"9a387b6855b1a1c3e01c71f0718d0bfb"}
+2024/08/01 22:49:54 server start: 1
+2024/08/01 22:49:54 DEBUG[200]: raft.DServerFMT{id:1, term:16, votedFor:3, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:54 DEBUG[200]: raft.DLogSummary{length:12, payload:"9a387b6855b1a1c3e01c71f0718d0bfb"}
+2024/08/01 22:49:55 New Leader Occured: 1
+2024/08/01 22:49:55 DEBUG[364]: raft.DServerFMT{id:1, term:21, votedFor:1, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:49:55 DEBUG[364]: raft.DLogSummary{length:12, payload:"9a387b6855b1a1c3e01c71f0718d0bfb"}
+2024/08/01 22:49:55 DEBUG[115]: raft.DXConflict{id:4, role:"Follower", XTerm:21, XIndex:0, XLen:11, PrevLogIndex:11, PrevLogTerm:16, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:55 DEBUG[499]: raft.DXConflict{id:1, role:"Leader", XTerm:21, XIndex:0, XLen:11, PrevLogIndex:11, PrevLogTerm:16, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:55 DEBUG[937]: raft.DXConflict{id:0, role:"Follower", XTerm:21, XIndex:0, XLen:11, PrevLogIndex:11, PrevLogTerm:16, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:55 DEBUG[832]: raft.DXConflict{id:1, role:"Leader", XTerm:21, XIndex:0, XLen:11, PrevLogIndex:11, PrevLogTerm:16, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:56 Server killed:2
+2024/08/01 22:49:56 DEBUG[614]: raft.DServerFMT{id:2, term:21, votedFor:-1, commitIndex:13, lastApplied:13, voteCount:1, role:"Follower"}
+2024/08/01 22:49:56 DEBUG[614]: raft.DLogSummary{length:14, payload:"771cd5f4e3ec3fcd5efa2a17e6f89ec9"}
+2024/08/01 22:49:56 server start: 2
+2024/08/01 22:49:56 DEBUG[085]: raft.DServerFMT{id:2, term:21, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:56 DEBUG[085]: raft.DLogSummary{length:14, payload:"771cd5f4e3ec3fcd5efa2a17e6f89ec9"}
+2024/08/01 22:49:56 Server killed:3
+2024/08/01 22:49:56 DEBUG[483]: raft.DServerFMT{id:3, term:21, votedFor:-1, commitIndex:13, lastApplied:13, voteCount:3, role:"Follower"}
+2024/08/01 22:49:56 DEBUG[483]: raft.DLogSummary{length:14, payload:"771cd5f4e3ec3fcd5efa2a17e6f89ec9"}
+2024/08/01 22:49:56 server start: 3
+2024/08/01 22:49:56 DEBUG[565]: raft.DServerFMT{id:3, term:21, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:56 DEBUG[565]: raft.DLogSummary{length:14, payload:"771cd5f4e3ec3fcd5efa2a17e6f89ec9"}
+2024/08/01 22:49:57 Server killed:4
+2024/08/01 22:49:57 DEBUG[924]: raft.DServerFMT{id:4, term:24, votedFor:4, commitIndex:14, lastApplied:14, voteCount:1, role:"Candidate"}
+2024/08/01 22:49:57 DEBUG[924]: raft.DLogSummary{length:15, payload:"6fbeb66aa421d7179f306140ec5f018c"}
+2024/08/01 22:49:57 server start: 4
+2024/08/01 22:49:57 DEBUG[419]: raft.DServerFMT{id:4, term:21, votedFor:1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:49:57 DEBUG[419]: raft.DLogSummary{length:15, payload:"6fbeb66aa421d7179f306140ec5f018c"}
+2024/08/01 22:49:57 New Leader Occured: 4
+2024/08/01 22:49:57 DEBUG[482]: raft.DServerFMT{id:4, term:26, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:49:57 DEBUG[482]: raft.DLogSummary{length:15, payload:"6fbeb66aa421d7179f306140ec5f018c"}
+2024/08/01 22:49:57 DEBUG[549]: raft.DXConflict{id:3, role:"Follower", XTerm:26, XIndex:0, XLen:14, PrevLogIndex:14, PrevLogTerm:21, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:57 DEBUG[594]: raft.DXConflict{id:4, role:"Leader", XTerm:26, XIndex:0, XLen:14, PrevLogIndex:14, PrevLogTerm:21, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:57 DEBUG[505]: raft.DXConflict{id:2, role:"Follower", XTerm:26, XIndex:0, XLen:14, PrevLogIndex:14, PrevLogTerm:21, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:49:57 DEBUG[065]: raft.DXConflict{id:4, role:"Leader", XTerm:26, XIndex:0, XLen:14, PrevLogIndex:14, PrevLogTerm:21, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+  ... Passed --  16.7  5  964  203064   16
+2024/08/01 22:50:00 Server killed:0
+2024/08/01 22:50:00 DEBUG[986]: raft.DServerFMT{id:0, term:26, votedFor:0, commitIndex:16, lastApplied:16, voteCount:1, role:"Candidate"}
+2024/08/01 22:50:00 DEBUG[986]: raft.DLogSummary{length:17, payload:"0867e59035774de1603fdea801ae15b2"}
+2024/08/01 22:50:00 Server killed:1
+2024/08/01 22:50:00 DEBUG[681]: raft.DServerFMT{id:1, term:26, votedFor:-1, commitIndex:16, lastApplied:16, voteCount:3, role:"Follower"}
+2024/08/01 22:50:00 DEBUG[681]: raft.DLogSummary{length:17, payload:"0867e59035774de1603fdea801ae15b2"}
+2024/08/01 22:50:00 Server killed:2
+2024/08/01 22:50:00 DEBUG[696]: raft.DServerFMT{id:2, term:26, votedFor:4, commitIndex:16, lastApplied:16, voteCount:2, role:"Follower"}
+2024/08/01 22:50:00 DEBUG[696]: raft.DLogSummary{length:17, payload:"0867e59035774de1603fdea801ae15b2"}
+2024/08/01 22:50:00 Server killed:3
+2024/08/01 22:50:00 DEBUG[388]: raft.DServerFMT{id:3, term:26, votedFor:4, commitIndex:16, lastApplied:16, voteCount:2, role:"Follower"}
+2024/08/01 22:50:00 DEBUG[388]: raft.DLogSummary{length:17, payload:"0867e59035774de1603fdea801ae15b2"}
+2024/08/01 22:50:00 Server killed:4
+2024/08/01 22:50:00 DEBUG[378]: raft.DServerFMT{id:4, term:26, votedFor:4, commitIndex:16, lastApplied:16, voteCount:3, role:"Leader"}
+2024/08/01 22:50:00 DEBUG[378]: raft.DLogSummary{length:17, payload:"0867e59035774de1603fdea801ae15b2"}
+2024/08/01 22:50:00 server start: 0
+2024/08/01 22:50:00 DEBUG[007]: raft.DServerFMT{id:0, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:00 DEBUG[007]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:00 server start: 1
+2024/08/01 22:50:00 DEBUG[023]: raft.DServerFMT{id:1, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:00 DEBUG[023]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:00 server start: 2
+2024/08/01 22:50:00 DEBUG[045]: raft.DServerFMT{id:2, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:00 DEBUG[045]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+Test (3C): partitioned leader and one follower crash, leader restarts ...
+2024/08/01 22:50:00 New Leader Occured: 2
+2024/08/01 22:50:00 DEBUG[342]: raft.DServerFMT{id:2, term:1, votedFor:2, commitIndex:0, lastApplied:0, voteCount:2, role:"Leader"}
+2024/08/01 22:50:00 DEBUG[342]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:01 Server killed:2
+2024/08/01 22:50:01 DEBUG[353]: raft.DServerFMT{id:2, term:1, votedFor:2, commitIndex:2, lastApplied:2, voteCount:2, role:"Leader"}
+2024/08/01 22:50:01 DEBUG[353]: raft.DLogSummary{length:3, payload:"f6bc28aec7133673c9b927898d87bc20"}
+2024/08/01 22:50:01 Server killed:0
+2024/08/01 22:50:01 DEBUG[733]: raft.DServerFMT{id:0, term:1, votedFor:2, commitIndex:2, lastApplied:2, voteCount:0, role:"Follower"}
+2024/08/01 22:50:01 DEBUG[733]: raft.DLogSummary{length:3, payload:"f6bc28aec7133673c9b927898d87bc20"}
+2024/08/01 22:50:01 server start: 2
+2024/08/01 22:50:01 DEBUG[425]: raft.DServerFMT{id:2, term:1, votedFor:2, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:01 DEBUG[425]: raft.DLogSummary{length:3, payload:"f6bc28aec7133673c9b927898d87bc20"}
+2024/08/01 22:50:01 New Leader Occured: 2
+2024/08/01 22:50:01 DEBUG[432]: raft.DServerFMT{id:2, term:3, votedFor:2, commitIndex:0, lastApplied:0, voteCount:2, role:"Leader"}
+2024/08/01 22:50:01 DEBUG[432]: raft.DLogSummary{length:3, payload:"f6bc28aec7133673c9b927898d87bc20"}
+2024/08/01 22:50:01 DEBUG[645]: raft.DXConflict{id:1, role:"Follower", XTerm:3, XIndex:0, XLen:2, PrevLogIndex:2, PrevLogTerm:1, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:01 DEBUG[472]: raft.DXConflict{id:2, role:"Leader", XTerm:3, XIndex:0, XLen:2, PrevLogIndex:2, PrevLogTerm:1, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:01 server start: 0
+2024/08/01 22:50:01 DEBUG[734]: raft.DServerFMT{id:0, term:1, votedFor:2, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:01 DEBUG[734]: raft.DLogSummary{length:3, payload:"f6bc28aec7133673c9b927898d87bc20"}
+  ... Passed --   2.0  3   36    9070    4
+2024/08/01 22:50:02 Server killed:0
+2024/08/01 22:50:02 DEBUG[649]: raft.DServerFMT{id:0, term:3, votedFor:-1, commitIndex:4, lastApplied:4, voteCount:0, role:"Follower"}
+2024/08/01 22:50:02 DEBUG[649]: raft.DLogSummary{length:5, payload:"b6e07d1c96cc4a4dfdd5055bd3be9e54"}
+2024/08/01 22:50:02 Server killed:1
+2024/08/01 22:50:02 DEBUG[560]: raft.DServerFMT{id:1, term:3, votedFor:2, commitIndex:4, lastApplied:4, voteCount:1, role:"Follower"}
+2024/08/01 22:50:02 DEBUG[560]: raft.DLogSummary{length:5, payload:"b6e07d1c96cc4a4dfdd5055bd3be9e54"}
+2024/08/01 22:50:02 Server killed:2
+2024/08/01 22:50:02 DEBUG[809]: raft.DServerFMT{id:2, term:3, votedFor:2, commitIndex:4, lastApplied:4, voteCount:2, role:"Leader"}
+2024/08/01 22:50:02 DEBUG[809]: raft.DLogSummary{length:5, payload:"b6e07d1c96cc4a4dfdd5055bd3be9e54"}
+2024/08/01 22:50:02 server start: 0
+2024/08/01 22:50:02 DEBUG[430]: raft.DServerFMT{id:0, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:02 DEBUG[430]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:02 server start: 1
+2024/08/01 22:50:02 DEBUG[442]: raft.DServerFMT{id:1, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:02 DEBUG[442]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:02 server start: 2
+2024/08/01 22:50:02 DEBUG[450]: raft.DServerFMT{id:2, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:02 DEBUG[450]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:02 server start: 3
+2024/08/01 22:50:02 DEBUG[143]: raft.DServerFMT{id:3, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:02 DEBUG[143]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:02 server start: 4
+2024/08/01 22:50:02 DEBUG[385]: raft.DServerFMT{id:4, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:02 DEBUG[385]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+Test (3C): Figure 8 ...
+2024/08/01 22:50:02 New Leader Occured: 2
+2024/08/01 22:50:02 DEBUG[046]: raft.DServerFMT{id:2, term:1, votedFor:2, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:02 DEBUG[046]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:02 Server killed:2
+2024/08/01 22:50:02 DEBUG[131]: raft.DServerFMT{id:2, term:1, votedFor:2, commitIndex:1, lastApplied:1, voteCount:3, role:"Leader"}
+2024/08/01 22:50:02 DEBUG[131]: raft.DLogSummary{length:3, payload:"b530a294253ebd48421db4855060a0be"}
+2024/08/01 22:50:02 New Leader Occured: 1
+2024/08/01 22:50:02 DEBUG[727]: raft.DServerFMT{id:1, term:2, votedFor:1, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:02 DEBUG[727]: raft.DLogSummary{length:2, payload:"6939bc3003d9ad75af8284fa67498e6d"}
+2024/08/01 22:50:02 Server killed:1
+2024/08/01 22:50:02 DEBUG[502]: raft.DServerFMT{id:1, term:2, votedFor:1, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:02 DEBUG[502]: raft.DLogSummary{length:3, payload:"2a60aff8cf78c5f2f016786458c820fc"}
+2024/08/01 22:50:03 New Leader Occured: 0
+2024/08/01 22:50:03 DEBUG[582]: raft.DServerFMT{id:0, term:3, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:03 DEBUG[582]: raft.DLogSummary{length:2, payload:"6939bc3003d9ad75af8284fa67498e6d"}
+2024/08/01 22:50:03 Server killed:0
+2024/08/01 22:50:03 DEBUG[466]: raft.DServerFMT{id:0, term:3, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:03 DEBUG[466]: raft.DLogSummary{length:3, payload:"35fa05446f17070bc2d2e412654c2672"}
+2024/08/01 22:50:03 server start: 0
+2024/08/01 22:50:03 DEBUG[053]: raft.DServerFMT{id:0, term:3, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:03 DEBUG[053]: raft.DLogSummary{length:3, payload:"35fa05446f17070bc2d2e412654c2672"}
+2024/08/01 22:50:03 New Leader Occured: 0
+2024/08/01 22:50:03 DEBUG[933]: raft.DServerFMT{id:0, term:5, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:03 DEBUG[933]: raft.DLogSummary{length:3, payload:"35fa05446f17070bc2d2e412654c2672"}
+2024/08/01 22:50:03 DEBUG[585]: raft.DXConflict{id:4, role:"Follower", XTerm:5, XIndex:0, XLen:2, PrevLogIndex:2, PrevLogTerm:3, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:03 DEBUG[541]: raft.DXConflict{id:0, role:"Leader", XTerm:5, XIndex:0, XLen:2, PrevLogIndex:2, PrevLogTerm:3, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:03 DEBUG[572]: raft.DXConflict{id:3, role:"Follower", XTerm:5, XIndex:0, XLen:2, PrevLogIndex:2, PrevLogTerm:3, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:03 DEBUG[717]: raft.DXConflict{id:0, role:"Leader", XTerm:5, XIndex:0, XLen:2, PrevLogIndex:2, PrevLogTerm:3, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:03 Server killed:0
+2024/08/01 22:50:03 DEBUG[003]: raft.DServerFMT{id:0, term:5, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:03 DEBUG[003]: raft.DLogSummary{length:4, payload:"24d80d4488b6ece6dc6252ce53843ad6"}
+2024/08/01 22:50:03 server start: 0
+2024/08/01 22:50:03 DEBUG[396]: raft.DServerFMT{id:0, term:5, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:03 DEBUG[396]: raft.DLogSummary{length:4, payload:"24d80d4488b6ece6dc6252ce53843ad6"}
+2024/08/01 22:50:03 New Leader Occured: 0
+2024/08/01 22:50:03 DEBUG[358]: raft.DServerFMT{id:0, term:7, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:03 DEBUG[358]: raft.DLogSummary{length:4, payload:"24d80d4488b6ece6dc6252ce53843ad6"}
+2024/08/01 22:50:03 DEBUG[124]: raft.DXConflict{id:3, role:"Follower", XTerm:7, XIndex:0, XLen:2, PrevLogIndex:3, PrevLogTerm:5, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:03 DEBUG[711]: raft.DXConflict{id:0, role:"Leader", XTerm:7, XIndex:0, XLen:2, PrevLogIndex:3, PrevLogTerm:5, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:03 DEBUG[235]: raft.DXConflict{id:4, role:"Follower", XTerm:7, XIndex:0, XLen:2, PrevLogIndex:3, PrevLogTerm:5, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:03 DEBUG[686]: raft.DXConflict{id:0, role:"Leader", XTerm:7, XIndex:0, XLen:2, PrevLogIndex:3, PrevLogTerm:5, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:04 Server killed:0
+2024/08/01 22:50:04 DEBUG[537]: raft.DServerFMT{id:0, term:7, votedFor:0, commitIndex:4, lastApplied:4, voteCount:3, role:"Leader"}
+2024/08/01 22:50:04 DEBUG[537]: raft.DLogSummary{length:5, payload:"eeb73777a0df88df49ec0c5bf0a20e3a"}
+2024/08/01 22:50:04 server start: 2
+2024/08/01 22:50:04 DEBUG[966]: raft.DServerFMT{id:2, term:1, votedFor:2, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:04 DEBUG[966]: raft.DLogSummary{length:3, payload:"b530a294253ebd48421db4855060a0be"}
+2024/08/01 22:50:04 New Leader Occured: 3
+2024/08/01 22:50:04 DEBUG[150]: raft.DServerFMT{id:3, term:8, votedFor:3, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:04 DEBUG[150]: raft.DLogSummary{length:5, payload:"eeb73777a0df88df49ec0c5bf0a20e3a"}
+2024/08/01 22:50:04 DEBUG[732]: raft.DXConflict{id:2, role:"Follower", XTerm:8, XIndex:0, XLen:3, PrevLogIndex:4, PrevLogTerm:7, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:04 DEBUG[009]: raft.DXConflict{id:3, role:"Leader", XTerm:8, XIndex:0, XLen:3, PrevLogIndex:4, PrevLogTerm:7, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:04 Server killed:3
+2024/08/01 22:50:04 DEBUG[695]: raft.DServerFMT{id:3, term:8, votedFor:3, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:04 DEBUG[695]: raft.DLogSummary{length:6, payload:"fec7722bbc1cb77c9d01a03404359ccd"}
+2024/08/01 22:50:04 server start: 0
+2024/08/01 22:50:04 DEBUG[425]: raft.DServerFMT{id:0, term:7, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:04 DEBUG[425]: raft.DLogSummary{length:5, payload:"eeb73777a0df88df49ec0c5bf0a20e3a"}
+2024/08/01 22:50:04 New Leader Occured: 4
+2024/08/01 22:50:04 DEBUG[467]: raft.DServerFMT{id:4, term:10, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:04 DEBUG[467]: raft.DLogSummary{length:5, payload:"eeb73777a0df88df49ec0c5bf0a20e3a"}
+2024/08/01 22:50:04 DEBUG[239]: raft.DXConflict{id:2, role:"Follower", XTerm:10, XIndex:0, XLen:3, PrevLogIndex:4, PrevLogTerm:7, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:04 DEBUG[887]: raft.DXConflict{id:4, role:"Leader", XTerm:10, XIndex:0, XLen:3, PrevLogIndex:4, PrevLogTerm:7, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:04 Server killed:4
+2024/08/01 22:50:04 DEBUG[825]: raft.DServerFMT{id:4, term:10, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:04 DEBUG[825]: raft.DLogSummary{length:6, payload:"39455d51e49ee8b7f6a56a6d59374df6"}
+2024/08/01 22:50:04 server start: 1
+2024/08/01 22:50:04 DEBUG[473]: raft.DServerFMT{id:1, term:2, votedFor:1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:04 DEBUG[473]: raft.DLogSummary{length:3, payload:"2a60aff8cf78c5f2f016786458c820fc"}
+2024/08/01 22:50:05 New Leader Occured: 0
+2024/08/01 22:50:05 DEBUG[512]: raft.DServerFMT{id:0, term:14, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:05 DEBUG[512]: raft.DLogSummary{length:5, payload:"eeb73777a0df88df49ec0c5bf0a20e3a"}
+2024/08/01 22:50:05 DEBUG[034]: raft.DXConflict{id:2, role:"Follower", XTerm:14, XIndex:0, XLen:3, PrevLogIndex:4, PrevLogTerm:7, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:05 DEBUG[588]: raft.DXConflict{id:1, role:"Follower", XTerm:14, XIndex:0, XLen:3, PrevLogIndex:4, PrevLogTerm:7, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:05 DEBUG[051]: raft.DXConflict{id:0, role:"Leader", XTerm:14, XIndex:0, XLen:3, PrevLogIndex:4, PrevLogTerm:7, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:05 DEBUG[043]: raft.DXConflict{id:0, role:"Leader", XTerm:14, XIndex:0, XLen:3, PrevLogIndex:4, PrevLogTerm:7, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:05 DEBUG[991]: raft.DXConflict{id:1, role:"Follower", XTerm:14, XIndex:2, XLen:0, PrevLogIndex:2, PrevLogTerm:3, ConflictLogMD5:"706661e51ceb399b447126557feb20a4"}
+2024/08/01 22:50:05 DEBUG[146]: raft.DXConflict{id:0, role:"Leader", XTerm:14, XIndex:2, XLen:0, PrevLogIndex:2, PrevLogTerm:3, ConflictLogMD5:"7d5f1b89157f773bfe58ca1f7b58d230"}
+2024/08/01 22:50:05 DEBUG[499]: raft.DXConflict{id:2, role:"Follower", XTerm:14, XIndex:1, XLen:0, PrevLogIndex:2, PrevLogTerm:3, ConflictLogMD5:"969dd00c4530997aeb1bb7c883cc3ddd"}
+2024/08/01 22:50:05 DEBUG[508]: raft.DXConflict{id:0, role:"Leader", XTerm:14, XIndex:1, XLen:0, PrevLogIndex:2, PrevLogTerm:3, ConflictLogMD5:"969dd00c4530997aeb1bb7c883cc3ddd"}
+2024/08/01 22:50:06 Server killed:0
+2024/08/01 22:50:06 DEBUG[098]: raft.DServerFMT{id:0, term:14, votedFor:0, commitIndex:5, lastApplied:5, voteCount:3, role:"Leader"}
+2024/08/01 22:50:06 DEBUG[098]: raft.DLogSummary{length:6, payload:"a69d9c3de556025717ab64ee479d4e36"}
+2024/08/01 22:50:06 server start: 3
+2024/08/01 22:50:06 DEBUG[416]: raft.DServerFMT{id:3, term:8, votedFor:3, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:06 DEBUG[416]: raft.DLogSummary{length:6, payload:"fec7722bbc1cb77c9d01a03404359ccd"}
+2024/08/01 22:50:06 New Leader Occured: 2
+2024/08/01 22:50:06 DEBUG[498]: raft.DServerFMT{id:2, term:15, votedFor:2, commitIndex:5, lastApplied:5, voteCount:3, role:"Leader"}
+2024/08/01 22:50:06 DEBUG[498]: raft.DLogSummary{length:6, payload:"a69d9c3de556025717ab64ee479d4e36"}
+2024/08/01 22:50:06 DEBUG[899]: raft.DXConflict{id:3, role:"Follower", XTerm:15, XIndex:5, XLen:0, PrevLogIndex:5, PrevLogTerm:14, ConflictLogMD5:"2635436324c1cf70279f825e2ba6c42b"}
+2024/08/01 22:50:06 DEBUG[082]: raft.DXConflict{id:2, role:"Leader", XTerm:15, XIndex:5, XLen:0, PrevLogIndex:5, PrevLogTerm:14, ConflictLogMD5:"f682d16de5bd11d8f696a915c238067f"}
+2024/08/01 22:50:06 Server killed:2
+2024/08/01 22:50:06 DEBUG[985]: raft.DServerFMT{id:2, term:15, votedFor:2, commitIndex:5, lastApplied:5, voteCount:3, role:"Leader"}
+2024/08/01 22:50:06 DEBUG[985]: raft.DLogSummary{length:7, payload:"c59c88d1532651ffcc135a0e206429a9"}
+2024/08/01 22:50:06 server start: 2
+2024/08/01 22:50:06 DEBUG[197]: raft.DServerFMT{id:2, term:15, votedFor:2, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:06 DEBUG[197]: raft.DLogSummary{length:7, payload:"c59c88d1532651ffcc135a0e206429a9"}
+2024/08/01 22:50:06 New Leader Occured: 2
+2024/08/01 22:50:06 DEBUG[333]: raft.DServerFMT{id:2, term:17, votedFor:2, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:06 DEBUG[333]: raft.DLogSummary{length:7, payload:"c59c88d1532651ffcc135a0e206429a9"}
+2024/08/01 22:50:06 DEBUG[059]: raft.DXConflict{id:1, role:"Follower", XTerm:17, XIndex:0, XLen:6, PrevLogIndex:6, PrevLogTerm:15, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:06 DEBUG[479]: raft.DXConflict{id:3, role:"Follower", XTerm:17, XIndex:0, XLen:6, PrevLogIndex:6, PrevLogTerm:15, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:06 DEBUG[840]: raft.DXConflict{id:2, role:"Leader", XTerm:17, XIndex:0, XLen:6, PrevLogIndex:6, PrevLogTerm:15, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:06 DEBUG[876]: raft.DXConflict{id:2, role:"Leader", XTerm:17, XIndex:0, XLen:6, PrevLogIndex:6, PrevLogTerm:15, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:07 Server killed:2
+2024/08/01 22:50:07 DEBUG[252]: raft.DServerFMT{id:2, term:17, votedFor:2, commitIndex:7, lastApplied:7, voteCount:3, role:"Leader"}
+2024/08/01 22:50:07 DEBUG[252]: raft.DLogSummary{length:8, payload:"8d7723df7f73df029d425ca35608f23f"}
+2024/08/01 22:50:07 server start: 2
+2024/08/01 22:50:07 DEBUG[660]: raft.DServerFMT{id:2, term:17, votedFor:2, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:07 DEBUG[660]: raft.DLogSummary{length:8, payload:"8d7723df7f73df029d425ca35608f23f"}
+2024/08/01 22:50:07 New Leader Occured: 2
+2024/08/01 22:50:07 DEBUG[266]: raft.DServerFMT{id:2, term:18, votedFor:2, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:07 DEBUG[266]: raft.DLogSummary{length:8, payload:"8d7723df7f73df029d425ca35608f23f"}
+2024/08/01 22:50:07 Server killed:2
+2024/08/01 22:50:07 DEBUG[991]: raft.DServerFMT{id:2, term:18, votedFor:2, commitIndex:8, lastApplied:8, voteCount:3, role:"Leader"}
+2024/08/01 22:50:07 DEBUG[991]: raft.DLogSummary{length:9, payload:"02e2be64c43b4e578550a15f7fed7eb0"}
+2024/08/01 22:50:07 server start: 0
+2024/08/01 22:50:07 DEBUG[610]: raft.DServerFMT{id:0, term:14, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:07 DEBUG[610]: raft.DLogSummary{length:6, payload:"a69d9c3de556025717ab64ee479d4e36"}
+2024/08/01 22:50:08 New Leader Occured: 1
+2024/08/01 22:50:08 DEBUG[724]: raft.DServerFMT{id:1, term:19, votedFor:1, commitIndex:8, lastApplied:8, voteCount:3, role:"Leader"}
+2024/08/01 22:50:08 DEBUG[724]: raft.DLogSummary{length:9, payload:"02e2be64c43b4e578550a15f7fed7eb0"}
+2024/08/01 22:50:08 DEBUG[442]: raft.DXConflict{id:0, role:"Follower", XTerm:19, XIndex:0, XLen:6, PrevLogIndex:8, PrevLogTerm:18, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:08 DEBUG[254]: raft.DXConflict{id:1, role:"Leader", XTerm:19, XIndex:0, XLen:6, PrevLogIndex:8, PrevLogTerm:18, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:08 Server killed:1
+2024/08/01 22:50:08 DEBUG[249]: raft.DServerFMT{id:1, term:19, votedFor:1, commitIndex:8, lastApplied:8, voteCount:3, role:"Leader"}
+2024/08/01 22:50:08 DEBUG[249]: raft.DLogSummary{length:10, payload:"a37695c547526b08a1c58d2827d93fd6"}
+2024/08/01 22:50:08 server start: 1
+2024/08/01 22:50:08 DEBUG[409]: raft.DServerFMT{id:1, term:19, votedFor:1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:08 DEBUG[409]: raft.DLogSummary{length:10, payload:"a37695c547526b08a1c58d2827d93fd6"}
+2024/08/01 22:50:08 New Leader Occured: 1
+2024/08/01 22:50:08 DEBUG[324]: raft.DServerFMT{id:1, term:21, votedFor:1, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:08 DEBUG[324]: raft.DLogSummary{length:10, payload:"a37695c547526b08a1c58d2827d93fd6"}
+2024/08/01 22:50:08 DEBUG[558]: raft.DXConflict{id:0, role:"Follower", XTerm:21, XIndex:0, XLen:9, PrevLogIndex:9, PrevLogTerm:19, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:08 DEBUG[866]: raft.DXConflict{id:3, role:"Follower", XTerm:21, XIndex:0, XLen:9, PrevLogIndex:9, PrevLogTerm:19, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:08 DEBUG[980]: raft.DXConflict{id:1, role:"Leader", XTerm:21, XIndex:0, XLen:9, PrevLogIndex:9, PrevLogTerm:19, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:08 DEBUG[136]: raft.DXConflict{id:1, role:"Leader", XTerm:21, XIndex:0, XLen:9, PrevLogIndex:9, PrevLogTerm:19, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:09 Server killed:1
+2024/08/01 22:50:09 DEBUG[372]: raft.DServerFMT{id:1, term:21, votedFor:1, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:09 DEBUG[372]: raft.DLogSummary{length:11, payload:"a0a6748ade5f9c7c35f0e858bd4eae64"}
+2024/08/01 22:50:09 server start: 2
+2024/08/01 22:50:09 DEBUG[317]: raft.DServerFMT{id:2, term:18, votedFor:2, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:09 DEBUG[317]: raft.DLogSummary{length:9, payload:"02e2be64c43b4e578550a15f7fed7eb0"}
+2024/08/01 22:50:09 New Leader Occured: 0
+2024/08/01 22:50:09 DEBUG[876]: raft.DServerFMT{id:0, term:22, votedFor:0, commitIndex:8, lastApplied:8, voteCount:3, role:"Leader"}
+2024/08/01 22:50:09 DEBUG[876]: raft.DLogSummary{length:10, payload:"a37695c547526b08a1c58d2827d93fd6"}
+2024/08/01 22:50:09 DEBUG[510]: raft.DXConflict{id:2, role:"Follower", XTerm:22, XIndex:0, XLen:9, PrevLogIndex:9, PrevLogTerm:19, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:09 DEBUG[994]: raft.DXConflict{id:0, role:"Leader", XTerm:22, XIndex:0, XLen:9, PrevLogIndex:9, PrevLogTerm:19, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:09 Server killed:0
+2024/08/01 22:50:09 DEBUG[417]: raft.DServerFMT{id:0, term:22, votedFor:0, commitIndex:8, lastApplied:8, voteCount:3, role:"Leader"}
+2024/08/01 22:50:09 DEBUG[417]: raft.DLogSummary{length:11, payload:"64644e20787ddf81d15777d05b8adc72"}
+2024/08/01 22:50:09 server start: 0
+2024/08/01 22:50:09 DEBUG[287]: raft.DServerFMT{id:0, term:22, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:09 DEBUG[287]: raft.DLogSummary{length:11, payload:"64644e20787ddf81d15777d05b8adc72"}
+2024/08/01 22:50:09 New Leader Occured: 0
+2024/08/01 22:50:09 DEBUG[515]: raft.DServerFMT{id:0, term:24, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:09 DEBUG[515]: raft.DLogSummary{length:11, payload:"64644e20787ddf81d15777d05b8adc72"}
+2024/08/01 22:50:09 DEBUG[232]: raft.DXConflict{id:2, role:"Follower", XTerm:24, XIndex:0, XLen:10, PrevLogIndex:10, PrevLogTerm:22, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:09 DEBUG[368]: raft.DXConflict{id:3, role:"Follower", XTerm:24, XIndex:0, XLen:10, PrevLogIndex:10, PrevLogTerm:22, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:09 DEBUG[102]: raft.DXConflict{id:0, role:"Leader", XTerm:24, XIndex:0, XLen:10, PrevLogIndex:10, PrevLogTerm:22, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:09 DEBUG[869]: raft.DXConflict{id:0, role:"Leader", XTerm:24, XIndex:0, XLen:10, PrevLogIndex:10, PrevLogTerm:22, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:10 Server killed:0
+2024/08/01 22:50:10 DEBUG[086]: raft.DServerFMT{id:0, term:24, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:10 DEBUG[086]: raft.DLogSummary{length:12, payload:"72a7428b0780c227a0d3ab19950dc387"}
+2024/08/01 22:50:10 server start: 0
+2024/08/01 22:50:10 DEBUG[804]: raft.DServerFMT{id:0, term:24, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:10 DEBUG[804]: raft.DLogSummary{length:12, payload:"72a7428b0780c227a0d3ab19950dc387"}
+2024/08/01 22:50:10 New Leader Occured: 0
+2024/08/01 22:50:10 DEBUG[576]: raft.DServerFMT{id:0, term:26, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:10 DEBUG[576]: raft.DLogSummary{length:12, payload:"72a7428b0780c227a0d3ab19950dc387"}
+2024/08/01 22:50:10 DEBUG[406]: raft.DXConflict{id:3, role:"Follower", XTerm:26, XIndex:0, XLen:11, PrevLogIndex:11, PrevLogTerm:24, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:10 DEBUG[165]: raft.DXConflict{id:2, role:"Follower", XTerm:26, XIndex:0, XLen:11, PrevLogIndex:11, PrevLogTerm:24, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:10 DEBUG[714]: raft.DXConflict{id:0, role:"Leader", XTerm:26, XIndex:0, XLen:11, PrevLogIndex:11, PrevLogTerm:24, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:10 DEBUG[084]: raft.DXConflict{id:0, role:"Leader", XTerm:26, XIndex:0, XLen:11, PrevLogIndex:11, PrevLogTerm:24, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:10 Server killed:0
+2024/08/01 22:50:10 DEBUG[216]: raft.DServerFMT{id:0, term:26, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:10 DEBUG[216]: raft.DLogSummary{length:13, payload:"a3aa74cd5c4d04c3bd86f3ab1dcc4727"}
+2024/08/01 22:50:10 server start: 4
+2024/08/01 22:50:10 DEBUG[730]: raft.DServerFMT{id:4, term:10, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:10 DEBUG[730]: raft.DLogSummary{length:6, payload:"39455d51e49ee8b7f6a56a6d59374df6"}
+2024/08/01 22:50:11 New Leader Occured: 3
+2024/08/01 22:50:11 DEBUG[240]: raft.DServerFMT{id:3, term:27, votedFor:3, commitIndex:8, lastApplied:8, voteCount:3, role:"Leader"}
+2024/08/01 22:50:11 DEBUG[240]: raft.DLogSummary{length:12, payload:"72a7428b0780c227a0d3ab19950dc387"}
+2024/08/01 22:50:11 DEBUG[090]: raft.DXConflict{id:4, role:"Follower", XTerm:27, XIndex:0, XLen:6, PrevLogIndex:11, PrevLogTerm:24, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:11 DEBUG[869]: raft.DXConflict{id:3, role:"Leader", XTerm:27, XIndex:0, XLen:6, PrevLogIndex:11, PrevLogTerm:24, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:11 DEBUG[712]: raft.DXConflict{id:4, role:"Follower", XTerm:27, XIndex:5, XLen:0, PrevLogIndex:5, PrevLogTerm:14, ConflictLogMD5:"989c80507fa3ad5f7bcce8d4f7a3ac88"}
+2024/08/01 22:50:11 DEBUG[607]: raft.DXConflict{id:3, role:"Leader", XTerm:27, XIndex:5, XLen:0, PrevLogIndex:5, PrevLogTerm:14, ConflictLogMD5:"f682d16de5bd11d8f696a915c238067f"}
+2024/08/01 22:50:11 Server killed:3
+2024/08/01 22:50:11 DEBUG[051]: raft.DServerFMT{id:3, term:27, votedFor:3, commitIndex:8, lastApplied:8, voteCount:3, role:"Leader"}
+2024/08/01 22:50:11 DEBUG[051]: raft.DLogSummary{length:13, payload:"0cea1da879f294c26e5a672f0e75a864"}
+2024/08/01 22:50:11 server start: 0
+2024/08/01 22:50:11 DEBUG[643]: raft.DServerFMT{id:0, term:26, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:11 DEBUG[643]: raft.DLogSummary{length:13, payload:"a3aa74cd5c4d04c3bd86f3ab1dcc4727"}
+2024/08/01 22:50:11 New Leader Occured: 0
+2024/08/01 22:50:11 DEBUG[959]: raft.DServerFMT{id:0, term:29, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:11 DEBUG[959]: raft.DLogSummary{length:13, payload:"a3aa74cd5c4d04c3bd86f3ab1dcc4727"}
+2024/08/01 22:50:11 DEBUG[500]: raft.DXConflict{id:2, role:"Follower", XTerm:29, XIndex:0, XLen:12, PrevLogIndex:12, PrevLogTerm:26, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:11 DEBUG[046]: raft.DXConflict{id:4, role:"Follower", XTerm:29, XIndex:0, XLen:6, PrevLogIndex:12, PrevLogTerm:26, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:11 DEBUG[341]: raft.DXConflict{id:0, role:"Leader", XTerm:29, XIndex:0, XLen:12, PrevLogIndex:12, PrevLogTerm:26, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:11 DEBUG[622]: raft.DXConflict{id:0, role:"Leader", XTerm:29, XIndex:0, XLen:6, PrevLogIndex:12, PrevLogTerm:26, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:11 DEBUG[375]: raft.DXConflict{id:4, role:"Follower", XTerm:29, XIndex:5, XLen:0, PrevLogIndex:5, PrevLogTerm:14, ConflictLogMD5:"989c80507fa3ad5f7bcce8d4f7a3ac88"}
+2024/08/01 22:50:11 DEBUG[804]: raft.DXConflict{id:0, role:"Leader", XTerm:29, XIndex:5, XLen:0, PrevLogIndex:5, PrevLogTerm:14, ConflictLogMD5:"f682d16de5bd11d8f696a915c238067f"}
+2024/08/01 22:50:12 Server killed:0
+2024/08/01 22:50:12 DEBUG[048]: raft.DServerFMT{id:0, term:29, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:12 DEBUG[048]: raft.DLogSummary{length:14, payload:"8618ce6c78b8baca13c41137d7861d7d"}
+2024/08/01 22:50:12 server start: 0
+2024/08/01 22:50:12 DEBUG[086]: raft.DServerFMT{id:0, term:29, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:12 DEBUG[086]: raft.DLogSummary{length:14, payload:"8618ce6c78b8baca13c41137d7861d7d"}
+2024/08/01 22:50:12 New Leader Occured: 0
+2024/08/01 22:50:12 DEBUG[068]: raft.DServerFMT{id:0, term:31, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:12 DEBUG[068]: raft.DLogSummary{length:14, payload:"8618ce6c78b8baca13c41137d7861d7d"}
+2024/08/01 22:50:12 DEBUG[317]: raft.DXConflict{id:4, role:"Follower", XTerm:31, XIndex:0, XLen:6, PrevLogIndex:13, PrevLogTerm:29, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:12 DEBUG[167]: raft.DXConflict{id:0, role:"Leader", XTerm:31, XIndex:0, XLen:6, PrevLogIndex:13, PrevLogTerm:29, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:12 DEBUG[695]: raft.DXConflict{id:2, role:"Follower", XTerm:31, XIndex:0, XLen:13, PrevLogIndex:13, PrevLogTerm:29, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:12 DEBUG[072]: raft.DXConflict{id:0, role:"Leader", XTerm:31, XIndex:0, XLen:13, PrevLogIndex:13, PrevLogTerm:29, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:12 DEBUG[806]: raft.DXConflict{id:4, role:"Follower", XTerm:31, XIndex:5, XLen:0, PrevLogIndex:5, PrevLogTerm:14, ConflictLogMD5:"989c80507fa3ad5f7bcce8d4f7a3ac88"}
+2024/08/01 22:50:12 DEBUG[344]: raft.DXConflict{id:0, role:"Leader", XTerm:31, XIndex:5, XLen:0, PrevLogIndex:5, PrevLogTerm:14, ConflictLogMD5:"f682d16de5bd11d8f696a915c238067f"}
+2024/08/01 22:50:12 Server killed:0
+2024/08/01 22:50:12 DEBUG[408]: raft.DServerFMT{id:0, term:31, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:12 DEBUG[408]: raft.DLogSummary{length:15, payload:"cdacd3d844aa15680c680cfc3cc1c1f3"}
+2024/08/01 22:50:12 server start: 0
+2024/08/01 22:50:12 DEBUG[697]: raft.DServerFMT{id:0, term:31, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:12 DEBUG[697]: raft.DLogSummary{length:15, payload:"cdacd3d844aa15680c680cfc3cc1c1f3"}
+2024/08/01 22:50:12 New Leader Occured: 0
+2024/08/01 22:50:12 DEBUG[678]: raft.DServerFMT{id:0, term:32, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:12 DEBUG[678]: raft.DLogSummary{length:15, payload:"cdacd3d844aa15680c680cfc3cc1c1f3"}
+2024/08/01 22:50:12 DEBUG[399]: raft.DXConflict{id:4, role:"Follower", XTerm:32, XIndex:0, XLen:14, PrevLogIndex:14, PrevLogTerm:31, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:12 DEBUG[766]: raft.DXConflict{id:0, role:"Leader", XTerm:32, XIndex:0, XLen:14, PrevLogIndex:14, PrevLogTerm:31, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:12 DEBUG[227]: raft.DXConflict{id:2, role:"Follower", XTerm:32, XIndex:0, XLen:14, PrevLogIndex:14, PrevLogTerm:31, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:12 DEBUG[571]: raft.DXConflict{id:0, role:"Leader", XTerm:32, XIndex:0, XLen:14, PrevLogIndex:14, PrevLogTerm:31, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:13 Server killed:0
+2024/08/01 22:50:13 DEBUG[736]: raft.DServerFMT{id:0, term:32, votedFor:0, commitIndex:15, lastApplied:15, voteCount:3, role:"Leader"}
+2024/08/01 22:50:13 DEBUG[736]: raft.DLogSummary{length:16, payload:"a801b104d9ba81d103b6c4aafc29c18d"}
+2024/08/01 22:50:13 server start: 0
+2024/08/01 22:50:13 DEBUG[350]: raft.DServerFMT{id:0, term:32, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:13 DEBUG[350]: raft.DLogSummary{length:16, payload:"a801b104d9ba81d103b6c4aafc29c18d"}
+2024/08/01 22:50:13 New Leader Occured: 4
+2024/08/01 22:50:13 DEBUG[322]: raft.DServerFMT{id:4, term:33, votedFor:4, commitIndex:15, lastApplied:15, voteCount:3, role:"Leader"}
+2024/08/01 22:50:13 DEBUG[322]: raft.DLogSummary{length:16, payload:"a801b104d9ba81d103b6c4aafc29c18d"}
+2024/08/01 22:50:13 Server killed:4
+2024/08/01 22:50:13 DEBUG[892]: raft.DServerFMT{id:4, term:33, votedFor:4, commitIndex:15, lastApplied:15, voteCount:3, role:"Leader"}
+2024/08/01 22:50:13 DEBUG[892]: raft.DLogSummary{length:17, payload:"b4d7b1ff87f46ab9597c2beebd7eb015"}
+2024/08/01 22:50:13 server start: 3
+2024/08/01 22:50:13 DEBUG[249]: raft.DServerFMT{id:3, term:27, votedFor:3, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:13 DEBUG[249]: raft.DLogSummary{length:13, payload:"0cea1da879f294c26e5a672f0e75a864"}
+2024/08/01 22:50:14 New Leader Occured: 0
+2024/08/01 22:50:14 DEBUG[592]: raft.DServerFMT{id:0, term:34, votedFor:0, commitIndex:15, lastApplied:15, voteCount:3, role:"Leader"}
+2024/08/01 22:50:14 DEBUG[592]: raft.DLogSummary{length:16, payload:"a801b104d9ba81d103b6c4aafc29c18d"}
+2024/08/01 22:50:14 DEBUG[007]: raft.DXConflict{id:3, role:"Follower", XTerm:34, XIndex:0, XLen:13, PrevLogIndex:15, PrevLogTerm:32, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:14 DEBUG[162]: raft.DXConflict{id:0, role:"Leader", XTerm:34, XIndex:0, XLen:13, PrevLogIndex:15, PrevLogTerm:32, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:14 DEBUG[848]: raft.DXConflict{id:3, role:"Follower", XTerm:34, XIndex:12, XLen:0, PrevLogIndex:12, PrevLogTerm:26, ConflictLogMD5:"2a22cbc4f4b2ef8f6b00ef2c5e21034e"}
+2024/08/01 22:50:14 DEBUG[842]: raft.DXConflict{id:0, role:"Leader", XTerm:34, XIndex:12, XLen:0, PrevLogIndex:12, PrevLogTerm:26, ConflictLogMD5:"138c23a487f42d50ec96ae358185e03d"}
+2024/08/01 22:50:14 Server killed:0
+2024/08/01 22:50:14 DEBUG[430]: raft.DServerFMT{id:0, term:34, votedFor:0, commitIndex:15, lastApplied:15, voteCount:3, role:"Leader"}
+2024/08/01 22:50:14 DEBUG[430]: raft.DLogSummary{length:17, payload:"f835e841a16f8f35da78e941e5c17a83"}
+2024/08/01 22:50:14 server start: 4
+2024/08/01 22:50:14 DEBUG[845]: raft.DServerFMT{id:4, term:33, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:14 DEBUG[845]: raft.DLogSummary{length:17, payload:"b4d7b1ff87f46ab9597c2beebd7eb015"}
+2024/08/01 22:50:14 New Leader Occured: 4
+2024/08/01 22:50:14 DEBUG[168]: raft.DServerFMT{id:4, term:36, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:14 DEBUG[168]: raft.DLogSummary{length:17, payload:"b4d7b1ff87f46ab9597c2beebd7eb015"}
+2024/08/01 22:50:14 DEBUG[436]: raft.DXConflict{id:3, role:"Follower", XTerm:36, XIndex:0, XLen:13, PrevLogIndex:16, PrevLogTerm:33, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:14 DEBUG[234]: raft.DXConflict{id:2, role:"Follower", XTerm:36, XIndex:0, XLen:16, PrevLogIndex:16, PrevLogTerm:33, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:14 DEBUG[013]: raft.DXConflict{id:4, role:"Leader", XTerm:36, XIndex:0, XLen:13, PrevLogIndex:16, PrevLogTerm:33, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:14 DEBUG[345]: raft.DXConflict{id:4, role:"Leader", XTerm:36, XIndex:0, XLen:16, PrevLogIndex:16, PrevLogTerm:33, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:14 DEBUG[574]: raft.DXConflict{id:3, role:"Follower", XTerm:36, XIndex:12, XLen:0, PrevLogIndex:12, PrevLogTerm:26, ConflictLogMD5:"2a22cbc4f4b2ef8f6b00ef2c5e21034e"}
+2024/08/01 22:50:14 DEBUG[542]: raft.DXConflict{id:4, role:"Leader", XTerm:36, XIndex:12, XLen:0, PrevLogIndex:12, PrevLogTerm:26, ConflictLogMD5:"138c23a487f42d50ec96ae358185e03d"}
+2024/08/01 22:50:14 Server killed:4
+2024/08/01 22:50:14 DEBUG[943]: raft.DServerFMT{id:4, term:36, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:14 DEBUG[943]: raft.DLogSummary{length:18, payload:"ad0aeb9cf7096c358a33dfab29465e19"}
+2024/08/01 22:50:14 server start: 1
+2024/08/01 22:50:14 DEBUG[644]: raft.DServerFMT{id:1, term:21, votedFor:1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:14 DEBUG[644]: raft.DLogSummary{length:11, payload:"a0a6748ade5f9c7c35f0e858bd4eae64"}
+2024/08/01 22:50:15 New Leader Occured: 2
+2024/08/01 22:50:15 DEBUG[495]: raft.DServerFMT{id:2, term:37, votedFor:2, commitIndex:15, lastApplied:15, voteCount:3, role:"Leader"}
+2024/08/01 22:50:15 DEBUG[495]: raft.DLogSummary{length:17, payload:"b4d7b1ff87f46ab9597c2beebd7eb015"}
+2024/08/01 22:50:15 DEBUG[657]: raft.DXConflict{id:3, role:"Follower", XTerm:37, XIndex:0, XLen:13, PrevLogIndex:16, PrevLogTerm:33, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:15 DEBUG[017]: raft.DXConflict{id:2, role:"Leader", XTerm:37, XIndex:0, XLen:13, PrevLogIndex:16, PrevLogTerm:33, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:15 DEBUG[881]: raft.DXConflict{id:1, role:"Follower", XTerm:37, XIndex:0, XLen:11, PrevLogIndex:16, PrevLogTerm:33, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:15 DEBUG[271]: raft.DXConflict{id:2, role:"Leader", XTerm:37, XIndex:0, XLen:11, PrevLogIndex:16, PrevLogTerm:33, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:15 DEBUG[130]: raft.DXConflict{id:1, role:"Follower", XTerm:37, XIndex:10, XLen:0, PrevLogIndex:10, PrevLogTerm:22, ConflictLogMD5:"237907bd1d2caf9d0e5598b89677c445"}
+2024/08/01 22:50:15 DEBUG[382]: raft.DXConflict{id:3, role:"Follower", XTerm:37, XIndex:12, XLen:0, PrevLogIndex:12, PrevLogTerm:26, ConflictLogMD5:"2a22cbc4f4b2ef8f6b00ef2c5e21034e"}
+2024/08/01 22:50:15 DEBUG[858]: raft.DXConflict{id:2, role:"Leader", XTerm:37, XIndex:10, XLen:0, PrevLogIndex:10, PrevLogTerm:22, ConflictLogMD5:"a302e1768330e6bac884d15e2719440d"}
+2024/08/01 22:50:15 DEBUG[736]: raft.DXConflict{id:2, role:"Leader", XTerm:37, XIndex:12, XLen:0, PrevLogIndex:12, PrevLogTerm:26, ConflictLogMD5:"138c23a487f42d50ec96ae358185e03d"}
+2024/08/01 22:50:15 Server killed:2
+2024/08/01 22:50:15 DEBUG[866]: raft.DServerFMT{id:2, term:37, votedFor:2, commitIndex:15, lastApplied:15, voteCount:3, role:"Leader"}
+2024/08/01 22:50:15 DEBUG[866]: raft.DLogSummary{length:18, payload:"413b8f9809101688b5e9f71a4ff958e0"}
+2024/08/01 22:50:15 server start: 4
+2024/08/01 22:50:15 DEBUG[025]: raft.DServerFMT{id:4, term:36, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:15 DEBUG[025]: raft.DLogSummary{length:18, payload:"ad0aeb9cf7096c358a33dfab29465e19"}
+2024/08/01 22:50:15 New Leader Occured: 4
+2024/08/01 22:50:15 DEBUG[799]: raft.DServerFMT{id:4, term:39, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:15 DEBUG[799]: raft.DLogSummary{length:18, payload:"ad0aeb9cf7096c358a33dfab29465e19"}
+2024/08/01 22:50:15 DEBUG[232]: raft.DXConflict{id:3, role:"Follower", XTerm:39, XIndex:0, XLen:13, PrevLogIndex:17, PrevLogTerm:36, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:15 DEBUG[136]: raft.DXConflict{id:4, role:"Leader", XTerm:39, XIndex:0, XLen:13, PrevLogIndex:17, PrevLogTerm:36, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:15 DEBUG[240]: raft.DXConflict{id:1, role:"Follower", XTerm:39, XIndex:0, XLen:11, PrevLogIndex:17, PrevLogTerm:36, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:15 DEBUG[423]: raft.DXConflict{id:4, role:"Leader", XTerm:39, XIndex:0, XLen:11, PrevLogIndex:17, PrevLogTerm:36, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:15 DEBUG[263]: raft.DXConflict{id:3, role:"Follower", XTerm:39, XIndex:12, XLen:0, PrevLogIndex:12, PrevLogTerm:26, ConflictLogMD5:"2a22cbc4f4b2ef8f6b00ef2c5e21034e"}
+2024/08/01 22:50:15 DEBUG[732]: raft.DXConflict{id:4, role:"Leader", XTerm:39, XIndex:12, XLen:0, PrevLogIndex:12, PrevLogTerm:26, ConflictLogMD5:"138c23a487f42d50ec96ae358185e03d"}
+2024/08/01 22:50:15 DEBUG[734]: raft.DXConflict{id:1, role:"Follower", XTerm:39, XIndex:10, XLen:0, PrevLogIndex:10, PrevLogTerm:22, ConflictLogMD5:"237907bd1d2caf9d0e5598b89677c445"}
+2024/08/01 22:50:15 DEBUG[767]: raft.DXConflict{id:4, role:"Leader", XTerm:39, XIndex:10, XLen:0, PrevLogIndex:10, PrevLogTerm:22, ConflictLogMD5:"a302e1768330e6bac884d15e2719440d"}
+2024/08/01 22:50:16 Server killed:4
+2024/08/01 22:50:16 DEBUG[585]: raft.DServerFMT{id:4, term:39, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:16 DEBUG[585]: raft.DLogSummary{length:19, payload:"ca5c1e3f0beffaf73403868a0d003ba0"}
+2024/08/01 22:50:16 server start: 4
+2024/08/01 22:50:16 DEBUG[087]: raft.DServerFMT{id:4, term:39, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:16 DEBUG[087]: raft.DLogSummary{length:19, payload:"ca5c1e3f0beffaf73403868a0d003ba0"}
+2024/08/01 22:50:16 New Leader Occured: 4
+2024/08/01 22:50:16 DEBUG[857]: raft.DServerFMT{id:4, term:42, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:16 DEBUG[857]: raft.DLogSummary{length:19, payload:"ca5c1e3f0beffaf73403868a0d003ba0"}
+2024/08/01 22:50:16 DEBUG[469]: raft.DXConflict{id:3, role:"Follower", XTerm:42, XIndex:0, XLen:18, PrevLogIndex:18, PrevLogTerm:39, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:16 DEBUG[361]: raft.DXConflict{id:4, role:"Leader", XTerm:42, XIndex:0, XLen:18, PrevLogIndex:18, PrevLogTerm:39, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:16 DEBUG[138]: raft.DXConflict{id:1, role:"Follower", XTerm:42, XIndex:0, XLen:18, PrevLogIndex:18, PrevLogTerm:39, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:16 DEBUG[488]: raft.DXConflict{id:4, role:"Leader", XTerm:42, XIndex:0, XLen:18, PrevLogIndex:18, PrevLogTerm:39, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:16 Server killed:4
+2024/08/01 22:50:16 DEBUG[184]: raft.DServerFMT{id:4, term:42, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:16 DEBUG[184]: raft.DLogSummary{length:20, payload:"dcf25b394b392a41850889412656c3cd"}
+2024/08/01 22:50:16 server start: 2
+2024/08/01 22:50:16 DEBUG[721]: raft.DServerFMT{id:2, term:37, votedFor:2, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:16 DEBUG[721]: raft.DLogSummary{length:18, payload:"413b8f9809101688b5e9f71a4ff958e0"}
+2024/08/01 22:50:17 New Leader Occured: 1
+2024/08/01 22:50:17 DEBUG[501]: raft.DServerFMT{id:1, term:43, votedFor:1, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:17 DEBUG[501]: raft.DLogSummary{length:19, payload:"ca5c1e3f0beffaf73403868a0d003ba0"}
+2024/08/01 22:50:17 DEBUG[893]: raft.DXConflict{id:2, role:"Follower", XTerm:43, XIndex:0, XLen:18, PrevLogIndex:18, PrevLogTerm:39, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:17 DEBUG[961]: raft.DXConflict{id:1, role:"Leader", XTerm:43, XIndex:0, XLen:18, PrevLogIndex:18, PrevLogTerm:39, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:17 DEBUG[294]: raft.DXConflict{id:2, role:"Follower", XTerm:43, XIndex:17, XLen:0, PrevLogIndex:17, PrevLogTerm:36, ConflictLogMD5:"25dd8667f23f95a42df690a293232775"}
+2024/08/01 22:50:17 DEBUG[494]: raft.DXConflict{id:1, role:"Leader", XTerm:43, XIndex:17, XLen:0, PrevLogIndex:17, PrevLogTerm:36, ConflictLogMD5:"7031b2440e3b4614fee345621ddb666e"}
+2024/08/01 22:50:17 Server killed:1
+2024/08/01 22:50:17 DEBUG[955]: raft.DServerFMT{id:1, term:43, votedFor:1, commitIndex:19, lastApplied:19, voteCount:3, role:"Leader"}
+2024/08/01 22:50:17 DEBUG[955]: raft.DLogSummary{length:20, payload:"1b678951ec0690fd24ac46aff606f369"}
+2024/08/01 22:50:17 server start: 4
+2024/08/01 22:50:17 DEBUG[778]: raft.DServerFMT{id:4, term:42, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:17 DEBUG[778]: raft.DLogSummary{length:20, payload:"dcf25b394b392a41850889412656c3cd"}
+2024/08/01 22:50:18 New Leader Occured: 3
+2024/08/01 22:50:18 DEBUG[826]: raft.DServerFMT{id:3, term:44, votedFor:3, commitIndex:19, lastApplied:19, voteCount:3, role:"Leader"}
+2024/08/01 22:50:18 DEBUG[826]: raft.DLogSummary{length:20, payload:"1b678951ec0690fd24ac46aff606f369"}
+2024/08/01 22:50:18 DEBUG[857]: raft.DXConflict{id:4, role:"Follower", XTerm:44, XIndex:19, XLen:0, PrevLogIndex:19, PrevLogTerm:43, ConflictLogMD5:"b7de9efa0225c26dc0fd7c827c966900"}
+2024/08/01 22:50:18 DEBUG[688]: raft.DXConflict{id:3, role:"Leader", XTerm:44, XIndex:19, XLen:0, PrevLogIndex:19, PrevLogTerm:43, ConflictLogMD5:"c04fcbdf4f0bbf88c77e906801168c55"}
+2024/08/01 22:50:18 Server killed:3
+2024/08/01 22:50:18 DEBUG[851]: raft.DServerFMT{id:3, term:44, votedFor:3, commitIndex:19, lastApplied:19, voteCount:3, role:"Leader"}
+2024/08/01 22:50:18 DEBUG[851]: raft.DLogSummary{length:21, payload:"ae89deebe1ccae762a9caffd263c0c4e"}
+2024/08/01 22:50:18 server start: 0
+2024/08/01 22:50:18 DEBUG[756]: raft.DServerFMT{id:0, term:34, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:18 DEBUG[756]: raft.DLogSummary{length:17, payload:"f835e841a16f8f35da78e941e5c17a83"}
+2024/08/01 22:50:18 New Leader Occured: 2
+2024/08/01 22:50:18 DEBUG[504]: raft.DServerFMT{id:2, term:45, votedFor:2, commitIndex:19, lastApplied:19, voteCount:3, role:"Leader"}
+2024/08/01 22:50:18 DEBUG[504]: raft.DLogSummary{length:20, payload:"1b678951ec0690fd24ac46aff606f369"}
+2024/08/01 22:50:18 DEBUG[811]: raft.DXConflict{id:0, role:"Follower", XTerm:45, XIndex:0, XLen:17, PrevLogIndex:19, PrevLogTerm:43, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:18 DEBUG[327]: raft.DXConflict{id:2, role:"Leader", XTerm:45, XIndex:0, XLen:17, PrevLogIndex:19, PrevLogTerm:43, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:18 DEBUG[607]: raft.DXConflict{id:0, role:"Follower", XTerm:45, XIndex:16, XLen:0, PrevLogIndex:16, PrevLogTerm:33, ConflictLogMD5:"98b27422d51bcd5560de4e29192cc791"}
+2024/08/01 22:50:18 DEBUG[177]: raft.DXConflict{id:2, role:"Leader", XTerm:45, XIndex:16, XLen:0, PrevLogIndex:16, PrevLogTerm:33, ConflictLogMD5:"bedace58375a1b57daf3051eb0ddf121"}
+2024/08/01 22:50:18 Server killed:2
+2024/08/01 22:50:18 DEBUG[580]: raft.DServerFMT{id:2, term:45, votedFor:2, commitIndex:19, lastApplied:19, voteCount:3, role:"Leader"}
+2024/08/01 22:50:18 DEBUG[580]: raft.DLogSummary{length:21, payload:"03726ff3ef82b87531abd737fb90c464"}
+2024/08/01 22:50:18 server start: 3
+2024/08/01 22:50:18 DEBUG[642]: raft.DServerFMT{id:3, term:44, votedFor:3, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:18 DEBUG[642]: raft.DLogSummary{length:21, payload:"ae89deebe1ccae762a9caffd263c0c4e"}
+2024/08/01 22:50:19 New Leader Occured: 3
+2024/08/01 22:50:19 DEBUG[007]: raft.DServerFMT{id:3, term:47, votedFor:3, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:19 DEBUG[007]: raft.DLogSummary{length:21, payload:"ae89deebe1ccae762a9caffd263c0c4e"}
+2024/08/01 22:50:19 DEBUG[640]: raft.DXConflict{id:4, role:"Follower", XTerm:47, XIndex:0, XLen:20, PrevLogIndex:20, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:19 DEBUG[783]: raft.DXConflict{id:0, role:"Follower", XTerm:47, XIndex:0, XLen:17, PrevLogIndex:20, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:19 DEBUG[241]: raft.DXConflict{id:3, role:"Leader", XTerm:47, XIndex:0, XLen:20, PrevLogIndex:20, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:19 DEBUG[561]: raft.DXConflict{id:3, role:"Leader", XTerm:47, XIndex:0, XLen:17, PrevLogIndex:20, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:19 DEBUG[776]: raft.DXConflict{id:0, role:"Follower", XTerm:47, XIndex:16, XLen:0, PrevLogIndex:16, PrevLogTerm:33, ConflictLogMD5:"98b27422d51bcd5560de4e29192cc791"}
+2024/08/01 22:50:19 DEBUG[331]: raft.DXConflict{id:3, role:"Leader", XTerm:47, XIndex:16, XLen:0, PrevLogIndex:16, PrevLogTerm:33, ConflictLogMD5:"bedace58375a1b57daf3051eb0ddf121"}
+2024/08/01 22:50:19 Server killed:3
+2024/08/01 22:50:19 DEBUG[504]: raft.DServerFMT{id:3, term:47, votedFor:3, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:19 DEBUG[504]: raft.DLogSummary{length:22, payload:"3a9cd1d68cc54aac7eca0dca045e09a7"}
+2024/08/01 22:50:19 server start: 2
+2024/08/01 22:50:19 DEBUG[391]: raft.DServerFMT{id:2, term:45, votedFor:2, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:19 DEBUG[391]: raft.DLogSummary{length:21, payload:"03726ff3ef82b87531abd737fb90c464"}
+2024/08/01 22:50:19 New Leader Occured: 2
+2024/08/01 22:50:19 DEBUG[582]: raft.DServerFMT{id:2, term:49, votedFor:2, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:19 DEBUG[582]: raft.DLogSummary{length:21, payload:"03726ff3ef82b87531abd737fb90c464"}
+2024/08/01 22:50:19 DEBUG[376]: raft.DXConflict{id:4, role:"Follower", XTerm:49, XIndex:20, XLen:0, PrevLogIndex:20, PrevLogTerm:45, ConflictLogMD5:"4f48e6d27646ca0e2c0486ff32a39a83"}
+2024/08/01 22:50:19 DEBUG[424]: raft.DXConflict{id:2, role:"Leader", XTerm:49, XIndex:20, XLen:0, PrevLogIndex:20, PrevLogTerm:45, ConflictLogMD5:"01ad489b875b3abc2b1b53bb4a3dcff4"}
+2024/08/01 22:50:19 DEBUG[147]: raft.DXConflict{id:0, role:"Follower", XTerm:49, XIndex:20, XLen:0, PrevLogIndex:20, PrevLogTerm:45, ConflictLogMD5:"4f48e6d27646ca0e2c0486ff32a39a83"}
+2024/08/01 22:50:19 DEBUG[368]: raft.DXConflict{id:2, role:"Leader", XTerm:49, XIndex:20, XLen:0, PrevLogIndex:20, PrevLogTerm:45, ConflictLogMD5:"01ad489b875b3abc2b1b53bb4a3dcff4"}
+2024/08/01 22:50:20 Server killed:2
+2024/08/01 22:50:20 DEBUG[089]: raft.DServerFMT{id:2, term:49, votedFor:2, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:20 DEBUG[089]: raft.DLogSummary{length:22, payload:"570db3f2ee24769d659f74e6e99fcafe"}
+2024/08/01 22:50:20 server start: 3
+2024/08/01 22:50:20 DEBUG[336]: raft.DServerFMT{id:3, term:47, votedFor:3, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:20 DEBUG[336]: raft.DLogSummary{length:22, payload:"3a9cd1d68cc54aac7eca0dca045e09a7"}
+2024/08/01 22:50:20 New Leader Occured: 3
+2024/08/01 22:50:20 DEBUG[967]: raft.DServerFMT{id:3, term:51, votedFor:3, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:20 DEBUG[967]: raft.DLogSummary{length:22, payload:"3a9cd1d68cc54aac7eca0dca045e09a7"}
+2024/08/01 22:50:20 DEBUG[989]: raft.DXConflict{id:4, role:"Follower", XTerm:51, XIndex:0, XLen:21, PrevLogIndex:21, PrevLogTerm:47, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:20 DEBUG[118]: raft.DXConflict{id:3, role:"Leader", XTerm:51, XIndex:0, XLen:21, PrevLogIndex:21, PrevLogTerm:47, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:20 DEBUG[279]: raft.DXConflict{id:0, role:"Follower", XTerm:51, XIndex:0, XLen:21, PrevLogIndex:21, PrevLogTerm:47, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:20 DEBUG[616]: raft.DXConflict{id:3, role:"Leader", XTerm:51, XIndex:0, XLen:21, PrevLogIndex:21, PrevLogTerm:47, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:20 Server killed:3
+2024/08/01 22:50:20 DEBUG[823]: raft.DServerFMT{id:3, term:51, votedFor:3, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:20 DEBUG[823]: raft.DLogSummary{length:23, payload:"cdd97cac868cd9f7ff6536d9fdc83d21"}
+2024/08/01 22:50:20 server start: 2
+2024/08/01 22:50:20 DEBUG[033]: raft.DServerFMT{id:2, term:49, votedFor:2, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:20 DEBUG[033]: raft.DLogSummary{length:22, payload:"570db3f2ee24769d659f74e6e99fcafe"}
+2024/08/01 22:50:20 New Leader Occured: 2
+2024/08/01 22:50:20 DEBUG[029]: raft.DServerFMT{id:2, term:53, votedFor:2, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:20 DEBUG[029]: raft.DLogSummary{length:22, payload:"570db3f2ee24769d659f74e6e99fcafe"}
+2024/08/01 22:50:20 DEBUG[333]: raft.DXConflict{id:4, role:"Follower", XTerm:53, XIndex:0, XLen:21, PrevLogIndex:21, PrevLogTerm:49, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:20 DEBUG[305]: raft.DXConflict{id:0, role:"Follower", XTerm:53, XIndex:0, XLen:21, PrevLogIndex:21, PrevLogTerm:49, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:20 DEBUG[495]: raft.DXConflict{id:2, role:"Leader", XTerm:53, XIndex:0, XLen:21, PrevLogIndex:21, PrevLogTerm:49, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:20 DEBUG[252]: raft.DXConflict{id:2, role:"Leader", XTerm:53, XIndex:0, XLen:21, PrevLogIndex:21, PrevLogTerm:49, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:20 DEBUG[456]: raft.DXConflict{id:4, role:"Follower", XTerm:53, XIndex:20, XLen:0, PrevLogIndex:20, PrevLogTerm:45, ConflictLogMD5:"4f48e6d27646ca0e2c0486ff32a39a83"}
+2024/08/01 22:50:20 DEBUG[120]: raft.DXConflict{id:0, role:"Follower", XTerm:53, XIndex:20, XLen:0, PrevLogIndex:20, PrevLogTerm:45, ConflictLogMD5:"4f48e6d27646ca0e2c0486ff32a39a83"}
+2024/08/01 22:50:20 DEBUG[667]: raft.DXConflict{id:2, role:"Leader", XTerm:53, XIndex:20, XLen:0, PrevLogIndex:20, PrevLogTerm:45, ConflictLogMD5:"01ad489b875b3abc2b1b53bb4a3dcff4"}
+2024/08/01 22:50:20 DEBUG[166]: raft.DXConflict{id:2, role:"Leader", XTerm:53, XIndex:20, XLen:0, PrevLogIndex:20, PrevLogTerm:45, ConflictLogMD5:"01ad489b875b3abc2b1b53bb4a3dcff4"}
+2024/08/01 22:50:20 Server killed:2
+2024/08/01 22:50:20 DEBUG[131]: raft.DServerFMT{id:2, term:53, votedFor:2, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:20 DEBUG[131]: raft.DLogSummary{length:23, payload:"3235133c25f342e97e8c42ce0b0cb10e"}
+2024/08/01 22:50:20 server start: 1
+2024/08/01 22:50:20 DEBUG[637]: raft.DServerFMT{id:1, term:43, votedFor:1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:20 DEBUG[637]: raft.DLogSummary{length:20, payload:"1b678951ec0690fd24ac46aff606f369"}
+2024/08/01 22:50:21 New Leader Occured: 4
+2024/08/01 22:50:21 DEBUG[498]: raft.DServerFMT{id:4, term:54, votedFor:4, commitIndex:19, lastApplied:19, voteCount:3, role:"Leader"}
+2024/08/01 22:50:21 DEBUG[498]: raft.DLogSummary{length:21, payload:"ae89deebe1ccae762a9caffd263c0c4e"}
+2024/08/01 22:50:21 DEBUG[506]: raft.DXConflict{id:1, role:"Follower", XTerm:54, XIndex:0, XLen:20, PrevLogIndex:20, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:21 DEBUG[603]: raft.DXConflict{id:4, role:"Leader", XTerm:54, XIndex:0, XLen:20, PrevLogIndex:20, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:21 Server killed:4
+2024/08/01 22:50:21 DEBUG[044]: raft.DServerFMT{id:4, term:54, votedFor:4, commitIndex:19, lastApplied:19, voteCount:3, role:"Leader"}
+2024/08/01 22:50:21 DEBUG[044]: raft.DLogSummary{length:22, payload:"1fdac4f684f3a53b74d1b0581109504f"}
+2024/08/01 22:50:21 server start: 3
+2024/08/01 22:50:21 DEBUG[192]: raft.DServerFMT{id:3, term:51, votedFor:3, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:21 DEBUG[192]: raft.DLogSummary{length:23, payload:"cdd97cac868cd9f7ff6536d9fdc83d21"}
+2024/08/01 22:50:21 New Leader Occured: 3
+2024/08/01 22:50:21 DEBUG[403]: raft.DServerFMT{id:3, term:57, votedFor:3, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:21 DEBUG[403]: raft.DLogSummary{length:23, payload:"cdd97cac868cd9f7ff6536d9fdc83d21"}
+2024/08/01 22:50:21 DEBUG[354]: raft.DXConflict{id:0, role:"Follower", XTerm:57, XIndex:0, XLen:21, PrevLogIndex:22, PrevLogTerm:51, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:21 DEBUG[686]: raft.DXConflict{id:3, role:"Leader", XTerm:57, XIndex:0, XLen:21, PrevLogIndex:22, PrevLogTerm:51, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:21 DEBUG[225]: raft.DXConflict{id:1, role:"Follower", XTerm:57, XIndex:0, XLen:20, PrevLogIndex:22, PrevLogTerm:51, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:21 DEBUG[976]: raft.DXConflict{id:3, role:"Leader", XTerm:57, XIndex:0, XLen:20, PrevLogIndex:22, PrevLogTerm:51, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:21 Server killed:3
+2024/08/01 22:50:21 DEBUG[254]: raft.DServerFMT{id:3, term:57, votedFor:3, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:21 DEBUG[254]: raft.DLogSummary{length:24, payload:"83c6248fbca39e09e0e08c1bed9eab27"}
+2024/08/01 22:50:21 server start: 4
+2024/08/01 22:50:21 DEBUG[692]: raft.DServerFMT{id:4, term:54, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:21 DEBUG[692]: raft.DLogSummary{length:22, payload:"1fdac4f684f3a53b74d1b0581109504f"}
+2024/08/01 22:50:22 New Leader Occured: 4
+2024/08/01 22:50:22 DEBUG[010]: raft.DServerFMT{id:4, term:59, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:22 DEBUG[010]: raft.DLogSummary{length:22, payload:"1fdac4f684f3a53b74d1b0581109504f"}
+2024/08/01 22:50:22 DEBUG[889]: raft.DXConflict{id:1, role:"Follower", XTerm:59, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"c94ff62aad695b97c4048c0abfb17d12"}
+2024/08/01 22:50:22 DEBUG[508]: raft.DXConflict{id:4, role:"Leader", XTerm:59, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"0e9c4edf33e4948f96a72da06753791f"}
+2024/08/01 22:50:22 DEBUG[039]: raft.DXConflict{id:0, role:"Follower", XTerm:59, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"c94ff62aad695b97c4048c0abfb17d12"}
+2024/08/01 22:50:22 DEBUG[075]: raft.DXConflict{id:4, role:"Leader", XTerm:59, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"0e9c4edf33e4948f96a72da06753791f"}
+2024/08/01 22:50:22 Server killed:4
+2024/08/01 22:50:22 DEBUG[194]: raft.DServerFMT{id:4, term:59, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:22 DEBUG[194]: raft.DLogSummary{length:23, payload:"0287cc6f52a4f7120b4f6cc16741eddd"}
+2024/08/01 22:50:22 server start: 4
+2024/08/01 22:50:22 DEBUG[447]: raft.DServerFMT{id:4, term:59, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:22 DEBUG[447]: raft.DLogSummary{length:23, payload:"0287cc6f52a4f7120b4f6cc16741eddd"}
+2024/08/01 22:50:22 New Leader Occured: 4
+2024/08/01 22:50:22 DEBUG[689]: raft.DServerFMT{id:4, term:61, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:22 DEBUG[689]: raft.DLogSummary{length:23, payload:"0287cc6f52a4f7120b4f6cc16741eddd"}
+2024/08/01 22:50:22 DEBUG[211]: raft.DXConflict{id:0, role:"Follower", XTerm:61, XIndex:0, XLen:22, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:22 DEBUG[465]: raft.DXConflict{id:4, role:"Leader", XTerm:61, XIndex:0, XLen:22, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:22 DEBUG[062]: raft.DXConflict{id:1, role:"Follower", XTerm:61, XIndex:0, XLen:22, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:22 DEBUG[887]: raft.DXConflict{id:4, role:"Leader", XTerm:61, XIndex:0, XLen:22, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:22 Server killed:4
+2024/08/01 22:50:22 DEBUG[043]: raft.DServerFMT{id:4, term:61, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:22 DEBUG[043]: raft.DLogSummary{length:24, payload:"cb1d056ffbe526193a1f90a64242aff7"}
+2024/08/01 22:50:22 server start: 2
+2024/08/01 22:50:22 DEBUG[511]: raft.DServerFMT{id:2, term:53, votedFor:2, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:22 DEBUG[511]: raft.DLogSummary{length:23, payload:"3235133c25f342e97e8c42ce0b0cb10e"}
+2024/08/01 22:50:22 New Leader Occured: 1
+2024/08/01 22:50:22 DEBUG[343]: raft.DServerFMT{id:1, term:62, votedFor:1, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:22 DEBUG[343]: raft.DLogSummary{length:22, payload:"1fdac4f684f3a53b74d1b0581109504f"}
+2024/08/01 22:50:22 DEBUG[954]: raft.DXConflict{id:2, role:"Follower", XTerm:62, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"8fc50ee51b094a7c09f563db312b6134"}
+2024/08/01 22:50:22 DEBUG[643]: raft.DXConflict{id:1, role:"Leader", XTerm:62, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"0e9c4edf33e4948f96a72da06753791f"}
+2024/08/01 22:50:23 Server killed:1
+2024/08/01 22:50:23 DEBUG[388]: raft.DServerFMT{id:1, term:62, votedFor:1, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:23 DEBUG[388]: raft.DLogSummary{length:23, payload:"ff849c3f3c0088f7b3e7d27cc9021e44"}
+2024/08/01 22:50:23 server start: 4
+2024/08/01 22:50:23 DEBUG[530]: raft.DServerFMT{id:4, term:61, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:23 DEBUG[530]: raft.DLogSummary{length:24, payload:"cb1d056ffbe526193a1f90a64242aff7"}
+2024/08/01 22:50:23 New Leader Occured: 4
+2024/08/01 22:50:23 DEBUG[896]: raft.DServerFMT{id:4, term:64, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:23 DEBUG[896]: raft.DLogSummary{length:24, payload:"cb1d056ffbe526193a1f90a64242aff7"}
+2024/08/01 22:50:23 DEBUG[894]: raft.DXConflict{id:0, role:"Follower", XTerm:64, XIndex:0, XLen:22, PrevLogIndex:23, PrevLogTerm:61, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:23 DEBUG[181]: raft.DXConflict{id:4, role:"Leader", XTerm:64, XIndex:0, XLen:22, PrevLogIndex:23, PrevLogTerm:61, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:23 DEBUG[828]: raft.DXConflict{id:2, role:"Follower", XTerm:64, XIndex:0, XLen:23, PrevLogIndex:23, PrevLogTerm:61, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:23 DEBUG[738]: raft.DXConflict{id:4, role:"Leader", XTerm:64, XIndex:0, XLen:23, PrevLogIndex:23, PrevLogTerm:61, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:23 DEBUG[757]: raft.DXConflict{id:2, role:"Follower", XTerm:64, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"3c5e894074411e83d8312aa3f4141ea8"}
+2024/08/01 22:50:23 DEBUG[043]: raft.DXConflict{id:4, role:"Leader", XTerm:64, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"36191938e43d463423a03ea287183ead"}
+2024/08/01 22:50:23 DEBUG[922]: raft.DXConflict{id:2, role:"Follower", XTerm:64, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"8fc50ee51b094a7c09f563db312b6134"}
+2024/08/01 22:50:23 DEBUG[478]: raft.DXConflict{id:4, role:"Leader", XTerm:64, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"0e9c4edf33e4948f96a72da06753791f"}
+2024/08/01 22:50:23 Server killed:4
+2024/08/01 22:50:23 DEBUG[169]: raft.DServerFMT{id:4, term:64, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:23 DEBUG[169]: raft.DLogSummary{length:25, payload:"e39831bb610bd9e804200c731fc1476d"}
+2024/08/01 22:50:23 server start: 4
+2024/08/01 22:50:23 DEBUG[600]: raft.DServerFMT{id:4, term:64, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:23 DEBUG[600]: raft.DLogSummary{length:25, payload:"e39831bb610bd9e804200c731fc1476d"}
+2024/08/01 22:50:23 New Leader Occured: 0
+2024/08/01 22:50:23 DEBUG[431]: raft.DServerFMT{id:0, term:65, votedFor:0, commitIndex:19, lastApplied:19, voteCount:3, role:"Leader"}
+2024/08/01 22:50:23 DEBUG[431]: raft.DLogSummary{length:25, payload:"e39831bb610bd9e804200c731fc1476d"}
+2024/08/01 22:50:23 DEBUG[507]: raft.DXConflict{id:2, role:"Follower", XTerm:65, XIndex:0, XLen:23, PrevLogIndex:24, PrevLogTerm:64, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:23 DEBUG[089]: raft.DXConflict{id:0, role:"Leader", XTerm:65, XIndex:0, XLen:23, PrevLogIndex:24, PrevLogTerm:64, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:24 DEBUG[706]: raft.DXConflict{id:2, role:"Follower", XTerm:65, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"3c5e894074411e83d8312aa3f4141ea8"}
+2024/08/01 22:50:24 DEBUG[426]: raft.DXConflict{id:0, role:"Leader", XTerm:65, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"36191938e43d463423a03ea287183ead"}
+2024/08/01 22:50:24 DEBUG[742]: raft.DXConflict{id:2, role:"Follower", XTerm:65, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"8fc50ee51b094a7c09f563db312b6134"}
+2024/08/01 22:50:24 DEBUG[825]: raft.DXConflict{id:0, role:"Leader", XTerm:65, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"0e9c4edf33e4948f96a72da06753791f"}
+2024/08/01 22:50:24 DEBUG[457]: raft.DXConflict{id:2, role:"Follower", XTerm:65, XIndex:20, XLen:0, PrevLogIndex:20, PrevLogTerm:44, ConflictLogMD5:"01ad489b875b3abc2b1b53bb4a3dcff4"}
+2024/08/01 22:50:24 DEBUG[101]: raft.DXConflict{id:0, role:"Leader", XTerm:65, XIndex:20, XLen:0, PrevLogIndex:20, PrevLogTerm:44, ConflictLogMD5:"4f48e6d27646ca0e2c0486ff32a39a83"}
+2024/08/01 22:50:24 Server killed:0
+2024/08/01 22:50:24 DEBUG[526]: raft.DServerFMT{id:0, term:65, votedFor:0, commitIndex:19, lastApplied:19, voteCount:3, role:"Leader"}
+2024/08/01 22:50:24 DEBUG[526]: raft.DLogSummary{length:26, payload:"bbe09e39363cd626a416adc6cfeac054"}
+2024/08/01 22:50:24 server start: 0
+2024/08/01 22:50:24 DEBUG[085]: raft.DServerFMT{id:0, term:65, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:24 DEBUG[085]: raft.DLogSummary{length:26, payload:"bbe09e39363cd626a416adc6cfeac054"}
+2024/08/01 22:50:24 New Leader Occured: 0
+2024/08/01 22:50:24 DEBUG[839]: raft.DServerFMT{id:0, term:67, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:24 DEBUG[839]: raft.DLogSummary{length:26, payload:"bbe09e39363cd626a416adc6cfeac054"}
+2024/08/01 22:50:24 DEBUG[032]: raft.DXConflict{id:4, role:"Follower", XTerm:67, XIndex:0, XLen:25, PrevLogIndex:25, PrevLogTerm:65, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:24 DEBUG[430]: raft.DXConflict{id:0, role:"Leader", XTerm:67, XIndex:0, XLen:25, PrevLogIndex:25, PrevLogTerm:65, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:24 DEBUG[438]: raft.DXConflict{id:2, role:"Follower", XTerm:67, XIndex:0, XLen:23, PrevLogIndex:25, PrevLogTerm:65, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:24 DEBUG[271]: raft.DXConflict{id:0, role:"Leader", XTerm:67, XIndex:0, XLen:23, PrevLogIndex:25, PrevLogTerm:65, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:24 Server killed:0
+2024/08/01 22:50:24 DEBUG[129]: raft.DServerFMT{id:0, term:67, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:24 DEBUG[129]: raft.DLogSummary{length:27, payload:"1f8cc394206d73976bdbddb7eb0f5952"}
+2024/08/01 22:50:24 server start: 1
+2024/08/01 22:50:24 DEBUG[116]: raft.DServerFMT{id:1, term:62, votedFor:1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:24 DEBUG[116]: raft.DLogSummary{length:23, payload:"ff849c3f3c0088f7b3e7d27cc9021e44"}
+2024/08/01 22:50:24 New Leader Occured: 4
+2024/08/01 22:50:24 DEBUG[935]: raft.DServerFMT{id:4, term:69, votedFor:4, commitIndex:19, lastApplied:19, voteCount:3, role:"Leader"}
+2024/08/01 22:50:24 DEBUG[935]: raft.DLogSummary{length:25, payload:"e39831bb610bd9e804200c731fc1476d"}
+2024/08/01 22:50:24 DEBUG[905]: raft.DXConflict{id:2, role:"Follower", XTerm:69, XIndex:0, XLen:23, PrevLogIndex:24, PrevLogTerm:64, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:24 DEBUG[444]: raft.DXConflict{id:1, role:"Follower", XTerm:69, XIndex:0, XLen:23, PrevLogIndex:24, PrevLogTerm:64, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:24 DEBUG[047]: raft.DXConflict{id:4, role:"Leader", XTerm:69, XIndex:0, XLen:23, PrevLogIndex:24, PrevLogTerm:64, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:24 DEBUG[715]: raft.DXConflict{id:4, role:"Leader", XTerm:69, XIndex:0, XLen:23, PrevLogIndex:24, PrevLogTerm:64, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:25 DEBUG[109]: raft.DXConflict{id:1, role:"Follower", XTerm:69, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"10adbc7bbca73c0a10d744e622879763"}
+2024/08/01 22:50:25 DEBUG[569]: raft.DXConflict{id:2, role:"Follower", XTerm:69, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"3c5e894074411e83d8312aa3f4141ea8"}
+2024/08/01 22:50:25 DEBUG[582]: raft.DXConflict{id:4, role:"Leader", XTerm:69, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"36191938e43d463423a03ea287183ead"}
+2024/08/01 22:50:25 DEBUG[027]: raft.DXConflict{id:4, role:"Leader", XTerm:69, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"36191938e43d463423a03ea287183ead"}
+2024/08/01 22:50:25 Server killed:4
+2024/08/01 22:50:25 DEBUG[672]: raft.DServerFMT{id:4, term:69, votedFor:4, commitIndex:19, lastApplied:19, voteCount:3, role:"Leader"}
+2024/08/01 22:50:25 DEBUG[672]: raft.DLogSummary{length:26, payload:"88d0adfe3bc1d403c81fe5e77fc60282"}
+2024/08/01 22:50:25 server start: 4
+2024/08/01 22:50:25 DEBUG[602]: raft.DServerFMT{id:4, term:69, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:25 DEBUG[602]: raft.DLogSummary{length:26, payload:"88d0adfe3bc1d403c81fe5e77fc60282"}
+2024/08/01 22:50:25 New Leader Occured: 4
+2024/08/01 22:50:25 DEBUG[686]: raft.DServerFMT{id:4, term:71, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:25 DEBUG[686]: raft.DLogSummary{length:26, payload:"88d0adfe3bc1d403c81fe5e77fc60282"}
+2024/08/01 22:50:25 DEBUG[827]: raft.DXConflict{id:2, role:"Follower", XTerm:71, XIndex:0, XLen:23, PrevLogIndex:25, PrevLogTerm:69, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:25 DEBUG[206]: raft.DXConflict{id:1, role:"Follower", XTerm:71, XIndex:0, XLen:23, PrevLogIndex:25, PrevLogTerm:69, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:25 DEBUG[595]: raft.DXConflict{id:4, role:"Leader", XTerm:71, XIndex:0, XLen:23, PrevLogIndex:25, PrevLogTerm:69, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:25 DEBUG[964]: raft.DXConflict{id:4, role:"Leader", XTerm:71, XIndex:0, XLen:23, PrevLogIndex:25, PrevLogTerm:69, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:25 DEBUG[716]: raft.DXConflict{id:1, role:"Follower", XTerm:71, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"10adbc7bbca73c0a10d744e622879763"}
+2024/08/01 22:50:25 DEBUG[572]: raft.DXConflict{id:2, role:"Follower", XTerm:71, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"3c5e894074411e83d8312aa3f4141ea8"}
+2024/08/01 22:50:25 DEBUG[542]: raft.DXConflict{id:4, role:"Leader", XTerm:71, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"36191938e43d463423a03ea287183ead"}
+2024/08/01 22:50:25 DEBUG[255]: raft.DXConflict{id:4, role:"Leader", XTerm:71, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"36191938e43d463423a03ea287183ead"}
+2024/08/01 22:50:25 Server killed:4
+2024/08/01 22:50:25 DEBUG[459]: raft.DServerFMT{id:4, term:71, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:25 DEBUG[459]: raft.DLogSummary{length:27, payload:"9e3ffd74f5081d71e5e1ba5d2551a05a"}
+2024/08/01 22:50:25 server start: 4
+2024/08/01 22:50:25 DEBUG[253]: raft.DServerFMT{id:4, term:71, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:25 DEBUG[253]: raft.DLogSummary{length:27, payload:"9e3ffd74f5081d71e5e1ba5d2551a05a"}
+2024/08/01 22:50:26 New Leader Occured: 4
+2024/08/01 22:50:26 DEBUG[635]: raft.DServerFMT{id:4, term:73, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:26 DEBUG[635]: raft.DLogSummary{length:27, payload:"9e3ffd74f5081d71e5e1ba5d2551a05a"}
+2024/08/01 22:50:26 DEBUG[102]: raft.DXConflict{id:2, role:"Follower", XTerm:73, XIndex:0, XLen:23, PrevLogIndex:26, PrevLogTerm:71, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:26 DEBUG[064]: raft.DXConflict{id:1, role:"Follower", XTerm:73, XIndex:0, XLen:23, PrevLogIndex:26, PrevLogTerm:71, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:26 DEBUG[051]: raft.DXConflict{id:4, role:"Leader", XTerm:73, XIndex:0, XLen:23, PrevLogIndex:26, PrevLogTerm:71, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:26 DEBUG[555]: raft.DXConflict{id:4, role:"Leader", XTerm:73, XIndex:0, XLen:23, PrevLogIndex:26, PrevLogTerm:71, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:26 DEBUG[308]: raft.DXConflict{id:2, role:"Follower", XTerm:73, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"3c5e894074411e83d8312aa3f4141ea8"}
+2024/08/01 22:50:26 DEBUG[290]: raft.DXConflict{id:4, role:"Leader", XTerm:73, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"36191938e43d463423a03ea287183ead"}
+2024/08/01 22:50:26 DEBUG[202]: raft.DXConflict{id:1, role:"Follower", XTerm:73, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"10adbc7bbca73c0a10d744e622879763"}
+2024/08/01 22:50:26 DEBUG[133]: raft.DXConflict{id:4, role:"Leader", XTerm:73, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"36191938e43d463423a03ea287183ead"}
+2024/08/01 22:50:26 DEBUG[818]: raft.DXConflict{id:2, role:"Follower", XTerm:73, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"8fc50ee51b094a7c09f563db312b6134"}
+2024/08/01 22:50:26 DEBUG[677]: raft.DXConflict{id:4, role:"Leader", XTerm:73, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"0e9c4edf33e4948f96a72da06753791f"}
+2024/08/01 22:50:26 Server killed:4
+2024/08/01 22:50:26 DEBUG[308]: raft.DServerFMT{id:4, term:73, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:26 DEBUG[308]: raft.DLogSummary{length:28, payload:"3c5714c36ade09d431829d11c14e6066"}
+2024/08/01 22:50:26 server start: 4
+2024/08/01 22:50:26 DEBUG[906]: raft.DServerFMT{id:4, term:73, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:26 DEBUG[906]: raft.DLogSummary{length:28, payload:"3c5714c36ade09d431829d11c14e6066"}
+2024/08/01 22:50:26 New Leader Occured: 4
+2024/08/01 22:50:26 DEBUG[791]: raft.DServerFMT{id:4, term:76, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:26 DEBUG[791]: raft.DLogSummary{length:28, payload:"3c5714c36ade09d431829d11c14e6066"}
+2024/08/01 22:50:26 DEBUG[555]: raft.DXConflict{id:1, role:"Follower", XTerm:76, XIndex:0, XLen:27, PrevLogIndex:27, PrevLogTerm:73, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:26 DEBUG[464]: raft.DXConflict{id:2, role:"Follower", XTerm:76, XIndex:0, XLen:23, PrevLogIndex:27, PrevLogTerm:73, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:26 DEBUG[924]: raft.DXConflict{id:4, role:"Leader", XTerm:76, XIndex:0, XLen:27, PrevLogIndex:27, PrevLogTerm:73, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:26 DEBUG[549]: raft.DXConflict{id:4, role:"Leader", XTerm:76, XIndex:0, XLen:23, PrevLogIndex:27, PrevLogTerm:73, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:26 Server killed:4
+2024/08/01 22:50:26 DEBUG[532]: raft.DServerFMT{id:4, term:76, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:26 DEBUG[532]: raft.DLogSummary{length:29, payload:"df307a820aa6c86834dbd2bf4e180e14"}
+2024/08/01 22:50:26 server start: 4
+2024/08/01 22:50:26 DEBUG[131]: raft.DServerFMT{id:4, term:76, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:26 DEBUG[131]: raft.DLogSummary{length:29, payload:"df307a820aa6c86834dbd2bf4e180e14"}
+2024/08/01 22:50:27 New Leader Occured: 4
+2024/08/01 22:50:27 DEBUG[339]: raft.DServerFMT{id:4, term:79, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:27 DEBUG[339]: raft.DLogSummary{length:29, payload:"df307a820aa6c86834dbd2bf4e180e14"}
+2024/08/01 22:50:27 DEBUG[599]: raft.DXConflict{id:2, role:"Follower", XTerm:79, XIndex:0, XLen:23, PrevLogIndex:28, PrevLogTerm:76, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:27 DEBUG[451]: raft.DXConflict{id:1, role:"Follower", XTerm:79, XIndex:0, XLen:27, PrevLogIndex:28, PrevLogTerm:76, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:27 DEBUG[994]: raft.DXConflict{id:4, role:"Leader", XTerm:79, XIndex:0, XLen:23, PrevLogIndex:28, PrevLogTerm:76, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:27 DEBUG[280]: raft.DXConflict{id:4, role:"Leader", XTerm:79, XIndex:0, XLen:27, PrevLogIndex:28, PrevLogTerm:76, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:27 DEBUG[707]: raft.DXConflict{id:2, role:"Follower", XTerm:79, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"3c5e894074411e83d8312aa3f4141ea8"}
+2024/08/01 22:50:27 DEBUG[595]: raft.DXConflict{id:4, role:"Leader", XTerm:79, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"36191938e43d463423a03ea287183ead"}
+2024/08/01 22:50:27 Server killed:4
+2024/08/01 22:50:27 DEBUG[775]: raft.DServerFMT{id:4, term:79, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:27 DEBUG[775]: raft.DLogSummary{length:30, payload:"42c73025b2597c9f463154b8a75fdebf"}
+2024/08/01 22:50:27 server start: 3
+2024/08/01 22:50:27 DEBUG[126]: raft.DServerFMT{id:3, term:57, votedFor:3, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:27 DEBUG[126]: raft.DLogSummary{length:24, payload:"83c6248fbca39e09e0e08c1bed9eab27"}
+2024/08/01 22:50:27 New Leader Occured: 1
+2024/08/01 22:50:27 DEBUG[516]: raft.DServerFMT{id:1, term:81, votedFor:1, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:27 DEBUG[516]: raft.DLogSummary{length:29, payload:"df307a820aa6c86834dbd2bf4e180e14"}
+2024/08/01 22:50:27 DEBUG[570]: raft.DXConflict{id:2, role:"Follower", XTerm:81, XIndex:0, XLen:23, PrevLogIndex:28, PrevLogTerm:76, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:27 DEBUG[451]: raft.DXConflict{id:1, role:"Leader", XTerm:81, XIndex:0, XLen:23, PrevLogIndex:28, PrevLogTerm:76, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:27 DEBUG[126]: raft.DXConflict{id:3, role:"Follower", XTerm:81, XIndex:0, XLen:24, PrevLogIndex:28, PrevLogTerm:76, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:27 DEBUG[809]: raft.DXConflict{id:1, role:"Leader", XTerm:81, XIndex:0, XLen:24, PrevLogIndex:28, PrevLogTerm:76, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:27 Server killed:1
+2024/08/01 22:50:27 DEBUG[496]: raft.DServerFMT{id:1, term:81, votedFor:1, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:27 DEBUG[496]: raft.DLogSummary{length:30, payload:"5a8444ccddd4c1d7f7809ffc2a2fd1a5"}
+2024/08/01 22:50:27 server start: 1
+2024/08/01 22:50:27 DEBUG[827]: raft.DServerFMT{id:1, term:81, votedFor:1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:27 DEBUG[827]: raft.DLogSummary{length:30, payload:"5a8444ccddd4c1d7f7809ffc2a2fd1a5"}
+2024/08/01 22:50:27 New Leader Occured: 1
+2024/08/01 22:50:27 DEBUG[405]: raft.DServerFMT{id:1, term:82, votedFor:1, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:27 DEBUG[405]: raft.DLogSummary{length:30, payload:"5a8444ccddd4c1d7f7809ffc2a2fd1a5"}
+2024/08/01 22:50:27 DEBUG[183]: raft.DXConflict{id:3, role:"Follower", XTerm:82, XIndex:0, XLen:24, PrevLogIndex:29, PrevLogTerm:81, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:27 DEBUG[231]: raft.DXConflict{id:2, role:"Follower", XTerm:82, XIndex:0, XLen:23, PrevLogIndex:29, PrevLogTerm:81, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:27 DEBUG[600]: raft.DXConflict{id:1, role:"Leader", XTerm:82, XIndex:0, XLen:24, PrevLogIndex:29, PrevLogTerm:81, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:27 DEBUG[552]: raft.DXConflict{id:1, role:"Leader", XTerm:82, XIndex:0, XLen:23, PrevLogIndex:29, PrevLogTerm:81, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:27 Server killed:1
+2024/08/01 22:50:27 DEBUG[054]: raft.DServerFMT{id:1, term:82, votedFor:1, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:27 DEBUG[054]: raft.DLogSummary{length:31, payload:"a9d01087035ac451cbe4db2592fef00c"}
+2024/08/01 22:50:27 server start: 4
+2024/08/01 22:50:27 DEBUG[582]: raft.DServerFMT{id:4, term:79, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:27 DEBUG[582]: raft.DLogSummary{length:30, payload:"42c73025b2597c9f463154b8a75fdebf"}
+2024/08/01 22:50:28 New Leader Occured: 4
+2024/08/01 22:50:28 DEBUG[779]: raft.DServerFMT{id:4, term:84, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:28 DEBUG[779]: raft.DLogSummary{length:30, payload:"42c73025b2597c9f463154b8a75fdebf"}
+2024/08/01 22:50:28 DEBUG[612]: raft.DXConflict{id:3, role:"Follower", XTerm:84, XIndex:0, XLen:24, PrevLogIndex:29, PrevLogTerm:79, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:28 DEBUG[525]: raft.DXConflict{id:2, role:"Follower", XTerm:84, XIndex:0, XLen:23, PrevLogIndex:29, PrevLogTerm:79, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:28 DEBUG[663]: raft.DXConflict{id:4, role:"Leader", XTerm:84, XIndex:0, XLen:24, PrevLogIndex:29, PrevLogTerm:79, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:28 DEBUG[940]: raft.DXConflict{id:4, role:"Leader", XTerm:84, XIndex:0, XLen:23, PrevLogIndex:29, PrevLogTerm:79, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:28 Server killed:4
+2024/08/01 22:50:28 DEBUG[335]: raft.DServerFMT{id:4, term:84, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:28 DEBUG[335]: raft.DLogSummary{length:31, payload:"0dbeecd2f0e7eab92da0ea0917e57f28"}
+2024/08/01 22:50:28 server start: 4
+2024/08/01 22:50:28 DEBUG[368]: raft.DServerFMT{id:4, term:84, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:28 DEBUG[368]: raft.DLogSummary{length:31, payload:"0dbeecd2f0e7eab92da0ea0917e57f28"}
+2024/08/01 22:50:28 New Leader Occured: 4
+2024/08/01 22:50:28 DEBUG[964]: raft.DServerFMT{id:4, term:87, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:28 DEBUG[964]: raft.DLogSummary{length:31, payload:"0dbeecd2f0e7eab92da0ea0917e57f28"}
+2024/08/01 22:50:28 DEBUG[537]: raft.DXConflict{id:3, role:"Follower", XTerm:87, XIndex:0, XLen:24, PrevLogIndex:30, PrevLogTerm:84, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:28 DEBUG[170]: raft.DXConflict{id:4, role:"Leader", XTerm:87, XIndex:0, XLen:24, PrevLogIndex:30, PrevLogTerm:84, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:28 DEBUG[051]: raft.DXConflict{id:2, role:"Follower", XTerm:87, XIndex:0, XLen:23, PrevLogIndex:30, PrevLogTerm:84, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:28 DEBUG[213]: raft.DXConflict{id:4, role:"Leader", XTerm:87, XIndex:0, XLen:23, PrevLogIndex:30, PrevLogTerm:84, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:28 Server killed:4
+2024/08/01 22:50:28 DEBUG[309]: raft.DServerFMT{id:4, term:87, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:28 DEBUG[309]: raft.DLogSummary{length:32, payload:"ff1efeeaa514d98b21d80257ab2ae368"}
+2024/08/01 22:50:28 server start: 1
+2024/08/01 22:50:28 DEBUG[056]: raft.DServerFMT{id:1, term:82, votedFor:1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:28 DEBUG[056]: raft.DLogSummary{length:31, payload:"a9d01087035ac451cbe4db2592fef00c"}
+2024/08/01 22:50:29 New Leader Occured: 1
+2024/08/01 22:50:29 DEBUG[321]: raft.DServerFMT{id:1, term:90, votedFor:1, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:29 DEBUG[321]: raft.DLogSummary{length:31, payload:"a9d01087035ac451cbe4db2592fef00c"}
+2024/08/01 22:50:29 DEBUG[636]: raft.DXConflict{id:2, role:"Follower", XTerm:90, XIndex:0, XLen:23, PrevLogIndex:30, PrevLogTerm:82, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:29 DEBUG[984]: raft.DXConflict{id:3, role:"Follower", XTerm:90, XIndex:0, XLen:24, PrevLogIndex:30, PrevLogTerm:82, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:29 DEBUG[844]: raft.DXConflict{id:1, role:"Leader", XTerm:90, XIndex:0, XLen:23, PrevLogIndex:30, PrevLogTerm:82, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:29 DEBUG[701]: raft.DXConflict{id:1, role:"Leader", XTerm:90, XIndex:0, XLen:24, PrevLogIndex:30, PrevLogTerm:82, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:29 DEBUG[106]: raft.DXConflict{id:3, role:"Follower", XTerm:90, XIndex:23, XLen:0, PrevLogIndex:23, PrevLogTerm:61, ConflictLogMD5:"488b286931f3569c6e70c20eb47cee7a"}
+2024/08/01 22:50:29 DEBUG[219]: raft.DXConflict{id:1, role:"Leader", XTerm:90, XIndex:23, XLen:0, PrevLogIndex:23, PrevLogTerm:61, ConflictLogMD5:"9e7eff61dc2d363d4cdc88b01fecdd97"}
+2024/08/01 22:50:29 DEBUG[453]: raft.DXConflict{id:2, role:"Follower", XTerm:90, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"3c5e894074411e83d8312aa3f4141ea8"}
+2024/08/01 22:50:29 DEBUG[759]: raft.DXConflict{id:1, role:"Leader", XTerm:90, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"36191938e43d463423a03ea287183ead"}
+2024/08/01 22:50:29 Server killed:1
+2024/08/01 22:50:29 DEBUG[385]: raft.DServerFMT{id:1, term:90, votedFor:1, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:29 DEBUG[385]: raft.DLogSummary{length:32, payload:"12e506fe467d8dc5ebb8d99a49318203"}
+2024/08/01 22:50:29 server start: 0
+2024/08/01 22:50:29 DEBUG[508]: raft.DServerFMT{id:0, term:67, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:29 DEBUG[508]: raft.DLogSummary{length:27, payload:"1f8cc394206d73976bdbddb7eb0f5952"}
+2024/08/01 22:50:29 New Leader Occured: 0
+2024/08/01 22:50:29 DEBUG[904]: raft.DServerFMT{id:0, term:93, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:29 DEBUG[904]: raft.DLogSummary{length:27, payload:"1f8cc394206d73976bdbddb7eb0f5952"}
+2024/08/01 22:50:29 DEBUG[003]: raft.DXConflict{id:3, role:"Follower", XTerm:93, XIndex:0, XLen:24, PrevLogIndex:26, PrevLogTerm:67, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:29 DEBUG[020]: raft.DXConflict{id:2, role:"Follower", XTerm:93, XIndex:0, XLen:23, PrevLogIndex:26, PrevLogTerm:67, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:29 DEBUG[584]: raft.DXConflict{id:0, role:"Leader", XTerm:93, XIndex:0, XLen:24, PrevLogIndex:26, PrevLogTerm:67, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:29 DEBUG[900]: raft.DXConflict{id:0, role:"Leader", XTerm:93, XIndex:0, XLen:23, PrevLogIndex:26, PrevLogTerm:67, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:29 DEBUG[476]: raft.DXConflict{id:3, role:"Follower", XTerm:93, XIndex:23, XLen:0, PrevLogIndex:23, PrevLogTerm:61, ConflictLogMD5:"488b286931f3569c6e70c20eb47cee7a"}
+2024/08/01 22:50:29 DEBUG[513]: raft.DXConflict{id:0, role:"Leader", XTerm:93, XIndex:23, XLen:0, PrevLogIndex:23, PrevLogTerm:61, ConflictLogMD5:"9e7eff61dc2d363d4cdc88b01fecdd97"}
+2024/08/01 22:50:29 DEBUG[238]: raft.DXConflict{id:2, role:"Follower", XTerm:93, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"3c5e894074411e83d8312aa3f4141ea8"}
+2024/08/01 22:50:29 DEBUG[706]: raft.DXConflict{id:0, role:"Leader", XTerm:93, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"36191938e43d463423a03ea287183ead"}
+2024/08/01 22:50:29 DEBUG[085]: raft.DXConflict{id:3, role:"Follower", XTerm:93, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"ceaa8e82a758e7bcabf78a217f079fc2"}
+2024/08/01 22:50:29 DEBUG[725]: raft.DXConflict{id:0, role:"Leader", XTerm:93, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"36191938e43d463423a03ea287183ead"}
+2024/08/01 22:50:29 DEBUG[060]: raft.DXConflict{id:2, role:"Follower", XTerm:93, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"8fc50ee51b094a7c09f563db312b6134"}
+2024/08/01 22:50:29 DEBUG[419]: raft.DXConflict{id:0, role:"Leader", XTerm:93, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"0e9c4edf33e4948f96a72da06753791f"}
+2024/08/01 22:50:29 Server killed:0
+2024/08/01 22:50:29 DEBUG[780]: raft.DServerFMT{id:0, term:93, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:29 DEBUG[780]: raft.DLogSummary{length:28, payload:"f493aaff9ac4ef503b36f409658d77b9"}
+2024/08/01 22:50:29 server start: 4
+2024/08/01 22:50:29 DEBUG[571]: raft.DServerFMT{id:4, term:87, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:29 DEBUG[571]: raft.DLogSummary{length:32, payload:"ff1efeeaa514d98b21d80257ab2ae368"}
+2024/08/01 22:50:30 New Leader Occured: 4
+2024/08/01 22:50:30 DEBUG[101]: raft.DServerFMT{id:4, term:97, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:30 DEBUG[101]: raft.DLogSummary{length:32, payload:"ff1efeeaa514d98b21d80257ab2ae368"}
+2024/08/01 22:50:30 DEBUG[973]: raft.DXConflict{id:3, role:"Follower", XTerm:97, XIndex:0, XLen:24, PrevLogIndex:31, PrevLogTerm:87, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:30 DEBUG[145]: raft.DXConflict{id:2, role:"Follower", XTerm:97, XIndex:0, XLen:23, PrevLogIndex:31, PrevLogTerm:87, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:30 DEBUG[302]: raft.DXConflict{id:4, role:"Leader", XTerm:97, XIndex:0, XLen:24, PrevLogIndex:31, PrevLogTerm:87, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:30 DEBUG[428]: raft.DXConflict{id:4, role:"Leader", XTerm:97, XIndex:0, XLen:23, PrevLogIndex:31, PrevLogTerm:87, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:30 DEBUG[956]: raft.DXConflict{id:3, role:"Follower", XTerm:97, XIndex:23, XLen:0, PrevLogIndex:23, PrevLogTerm:61, ConflictLogMD5:"488b286931f3569c6e70c20eb47cee7a"}
+2024/08/01 22:50:30 DEBUG[243]: raft.DXConflict{id:2, role:"Follower", XTerm:97, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"3c5e894074411e83d8312aa3f4141ea8"}
+2024/08/01 22:50:30 DEBUG[545]: raft.DXConflict{id:4, role:"Leader", XTerm:97, XIndex:23, XLen:0, PrevLogIndex:23, PrevLogTerm:61, ConflictLogMD5:"9e7eff61dc2d363d4cdc88b01fecdd97"}
+2024/08/01 22:50:30 DEBUG[453]: raft.DXConflict{id:4, role:"Leader", XTerm:97, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"36191938e43d463423a03ea287183ead"}
+2024/08/01 22:50:30 Server killed:4
+2024/08/01 22:50:30 DEBUG[310]: raft.DServerFMT{id:4, term:97, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:30 DEBUG[310]: raft.DLogSummary{length:33, payload:"24ced6198a45533136570357169c41cc"}
+2024/08/01 22:50:30 server start: 4
+2024/08/01 22:50:30 DEBUG[738]: raft.DServerFMT{id:4, term:97, votedFor:4, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:30 DEBUG[738]: raft.DLogSummary{length:33, payload:"24ced6198a45533136570357169c41cc"}
+2024/08/01 22:50:31 New Leader Occured: 4
+2024/08/01 22:50:31 DEBUG[710]: raft.DServerFMT{id:4, term:99, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:31 DEBUG[710]: raft.DLogSummary{length:33, payload:"24ced6198a45533136570357169c41cc"}
+2024/08/01 22:50:31 DEBUG[526]: raft.DXConflict{id:3, role:"Follower", XTerm:99, XIndex:0, XLen:24, PrevLogIndex:32, PrevLogTerm:97, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:31 DEBUG[747]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:0, XLen:24, PrevLogIndex:32, PrevLogTerm:97, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:31 DEBUG[314]: raft.DXConflict{id:2, role:"Follower", XTerm:99, XIndex:0, XLen:23, PrevLogIndex:32, PrevLogTerm:97, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:31 DEBUG[847]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:0, XLen:23, PrevLogIndex:32, PrevLogTerm:97, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:31 DEBUG[088]: raft.DXConflict{id:2, role:"Follower", XTerm:99, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"3c5e894074411e83d8312aa3f4141ea8"}
+2024/08/01 22:50:31 DEBUG[997]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"36191938e43d463423a03ea287183ead"}
+2024/08/01 22:50:31 DEBUG[549]: raft.DXConflict{id:3, role:"Follower", XTerm:99, XIndex:23, XLen:0, PrevLogIndex:23, PrevLogTerm:61, ConflictLogMD5:"488b286931f3569c6e70c20eb47cee7a"}
+2024/08/01 22:50:31 DEBUG[795]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:23, XLen:0, PrevLogIndex:23, PrevLogTerm:61, ConflictLogMD5:"9e7eff61dc2d363d4cdc88b01fecdd97"}
+2024/08/01 22:50:31 DEBUG[783]: raft.DXConflict{id:3, role:"Follower", XTerm:99, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"ceaa8e82a758e7bcabf78a217f079fc2"}
+2024/08/01 22:50:31 DEBUG[320]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:22, XLen:0, PrevLogIndex:22, PrevLogTerm:59, ConflictLogMD5:"36191938e43d463423a03ea287183ead"}
+2024/08/01 22:50:31 DEBUG[416]: raft.DXConflict{id:2, role:"Follower", XTerm:99, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"8fc50ee51b094a7c09f563db312b6134"}
+2024/08/01 22:50:31 DEBUG[583]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"0e9c4edf33e4948f96a72da06753791f"}
+2024/08/01 22:50:31 server start: 0
+2024/08/01 22:50:31 DEBUG[451]: raft.DServerFMT{id:0, term:93, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:31 DEBUG[451]: raft.DLogSummary{length:28, payload:"f493aaff9ac4ef503b36f409658d77b9"}
+2024/08/01 22:50:31 server start: 1
+2024/08/01 22:50:31 DEBUG[214]: raft.DServerFMT{id:1, term:90, votedFor:1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:31 DEBUG[214]: raft.DLogSummary{length:32, payload:"12e506fe467d8dc5ebb8d99a49318203"}
+2024/08/01 22:50:31 DEBUG[064]: raft.DXConflict{id:3, role:"Follower", XTerm:99, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"c94ff62aad695b97c4048c0abfb17d12"}
+2024/08/01 22:50:31 DEBUG[593]: raft.DXConflict{id:1, role:"Follower", XTerm:99, XIndex:0, XLen:32, PrevLogIndex:32, PrevLogTerm:97, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:31 DEBUG[458]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:21, XLen:0, PrevLogIndex:21, PrevLogTerm:54, ConflictLogMD5:"0e9c4edf33e4948f96a72da06753791f"}
+2024/08/01 22:50:31 DEBUG[136]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:0, XLen:32, PrevLogIndex:32, PrevLogTerm:97, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:31 DEBUG[161]: raft.DXConflict{id:0, role:"Follower", XTerm:99, XIndex:0, XLen:28, PrevLogIndex:32, PrevLogTerm:97, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:31 DEBUG[105]: raft.DXConflict{id:2, role:"Follower", XTerm:99, XIndex:20, XLen:0, PrevLogIndex:20, PrevLogTerm:44, ConflictLogMD5:"01ad489b875b3abc2b1b53bb4a3dcff4"}
+2024/08/01 22:50:31 DEBUG[103]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:0, XLen:28, PrevLogIndex:32, PrevLogTerm:97, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:31 DEBUG[748]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:20, XLen:0, PrevLogIndex:20, PrevLogTerm:44, ConflictLogMD5:"4f48e6d27646ca0e2c0486ff32a39a83"}
+2024/08/01 22:50:31 DEBUG[353]: raft.DXConflict{id:1, role:"Follower", XTerm:99, XIndex:31, XLen:0, PrevLogIndex:31, PrevLogTerm:87, ConflictLogMD5:"91db18bee0109f5d3e68f2853597ec42"}
+2024/08/01 22:50:31 DEBUG[985]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:31, XLen:0, PrevLogIndex:31, PrevLogTerm:87, ConflictLogMD5:"fb5a0d8f18f48552aa37b00452596144"}
+2024/08/01 22:50:31 DEBUG[457]: raft.DXConflict{id:0, role:"Follower", XTerm:99, XIndex:27, XLen:0, PrevLogIndex:27, PrevLogTerm:73, ConflictLogMD5:"b34d0c93616f409879151f75bee854b1"}
+2024/08/01 22:50:31 DEBUG[675]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:27, XLen:0, PrevLogIndex:27, PrevLogTerm:73, ConflictLogMD5:"c00e5f171f58d0257be5a1fb082f8a31"}
+2024/08/01 22:50:31 DEBUG[465]: raft.DXConflict{id:1, role:"Follower", XTerm:99, XIndex:30, XLen:0, PrevLogIndex:30, PrevLogTerm:84, ConflictLogMD5:"a793eb3c871fa657eceac935eccf3bc9"}
+2024/08/01 22:50:31 DEBUG[187]: raft.DXConflict{id:0, role:"Follower", XTerm:99, XIndex:26, XLen:0, PrevLogIndex:26, PrevLogTerm:71, ConflictLogMD5:"96be13b81f2e9c05cd75ef4d9af377cf"}
+2024/08/01 22:50:31 DEBUG[538]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:30, XLen:0, PrevLogIndex:30, PrevLogTerm:84, ConflictLogMD5:"dd981daf423bf75988bc644c326bd28b"}
+2024/08/01 22:50:31 DEBUG[354]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:26, XLen:0, PrevLogIndex:26, PrevLogTerm:71, ConflictLogMD5:"f09f82d1aedd21b6f1d9055293ee911a"}
+2024/08/01 22:50:31 DEBUG[458]: raft.DXConflict{id:1, role:"Follower", XTerm:99, XIndex:29, XLen:0, PrevLogIndex:29, PrevLogTerm:79, ConflictLogMD5:"ae50b3a45c553d2cc8679421400730ef"}
+2024/08/01 22:50:31 DEBUG[658]: raft.DXConflict{id:0, role:"Follower", XTerm:99, XIndex:25, XLen:0, PrevLogIndex:25, PrevLogTerm:69, ConflictLogMD5:"0f76e7d4a0818363e96e929e6c6b9517"}
+2024/08/01 22:50:31 DEBUG[194]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:29, XLen:0, PrevLogIndex:29, PrevLogTerm:79, ConflictLogMD5:"5f416b705f37f0480d6b77b898a06acd"}
+2024/08/01 22:50:31 DEBUG[609]: raft.DXConflict{id:4, role:"Leader", XTerm:99, XIndex:25, XLen:0, PrevLogIndex:25, PrevLogTerm:69, ConflictLogMD5:"7f4877e7d11bf91a55d6f261cb43249d"}
+  ... Passed --  29.9  5  956  193857   33
+2024/08/01 22:50:31 Server killed:0
+2024/08/01 22:50:31 DEBUG[081]: raft.DServerFMT{id:0, term:99, votedFor:-1, commitIndex:33, lastApplied:33, voteCount:0, role:"Follower"}
+2024/08/01 22:50:31 DEBUG[081]: raft.DLogSummary{length:34, payload:"37caf13bd37e8cb3a9ad1c09d91836cc"}
+2024/08/01 22:50:31 Server killed:1
+2024/08/01 22:50:31 DEBUG[562]: raft.DServerFMT{id:1, term:99, votedFor:-1, commitIndex:33, lastApplied:33, voteCount:0, role:"Follower"}
+2024/08/01 22:50:31 DEBUG[562]: raft.DLogSummary{length:34, payload:"37caf13bd37e8cb3a9ad1c09d91836cc"}
+2024/08/01 22:50:31 Server killed:2
+2024/08/01 22:50:31 DEBUG[718]: raft.DServerFMT{id:2, term:99, votedFor:4, commitIndex:33, lastApplied:33, voteCount:1, role:"Follower"}
+2024/08/01 22:50:31 DEBUG[718]: raft.DLogSummary{length:34, payload:"37caf13bd37e8cb3a9ad1c09d91836cc"}
+2024/08/01 22:50:31 Server killed:3
+2024/08/01 22:50:31 DEBUG[756]: raft.DServerFMT{id:3, term:99, votedFor:4, commitIndex:33, lastApplied:33, voteCount:2, role:"Follower"}
+2024/08/01 22:50:31 DEBUG[756]: raft.DLogSummary{length:34, payload:"37caf13bd37e8cb3a9ad1c09d91836cc"}
+2024/08/01 22:50:31 Server killed:4
+2024/08/01 22:50:31 DEBUG[677]: raft.DServerFMT{id:4, term:99, votedFor:4, commitIndex:33, lastApplied:33, voteCount:3, role:"Leader"}
+2024/08/01 22:50:31 DEBUG[677]: raft.DLogSummary{length:34, payload:"37caf13bd37e8cb3a9ad1c09d91836cc"}
+2024/08/01 22:50:31 server start: 0
+2024/08/01 22:50:31 DEBUG[033]: raft.DServerFMT{id:0, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:31 DEBUG[033]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:31 server start: 1
+2024/08/01 22:50:31 DEBUG[328]: raft.DServerFMT{id:1, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:31 DEBUG[328]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:31 server start: 2
+2024/08/01 22:50:31 DEBUG[687]: raft.DServerFMT{id:2, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:31 DEBUG[687]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:31 server start: 3
+2024/08/01 22:50:31 DEBUG[790]: raft.DServerFMT{id:3, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:31 DEBUG[790]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:31 server start: 4
+2024/08/01 22:50:31 DEBUG[706]: raft.DServerFMT{id:4, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:31 DEBUG[706]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+Test (3C): unreliable agreement ...
+2024/08/01 22:50:32 New Leader Occured: 1
+2024/08/01 22:50:32 DEBUG[676]: raft.DServerFMT{id:1, term:1, votedFor:1, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:32 DEBUG[676]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+  ... Passed --   5.5  5  216   77724  246
+2024/08/01 22:50:37 Server killed:0
+2024/08/01 22:50:37 DEBUG[952]: raft.DServerFMT{id:0, term:1, votedFor:1, commitIndex:246, lastApplied:246, voteCount:0, role:"Follower"}
+2024/08/01 22:50:37 DEBUG[952]: raft.DLogSummary{length:247, payload:"bbc580760051674068d8ee2ee6d76c5c"}
+2024/08/01 22:50:37 Server killed:1
+2024/08/01 22:50:37 DEBUG[017]: raft.DServerFMT{id:1, term:1, votedFor:1, commitIndex:246, lastApplied:246, voteCount:3, role:"Leader"}
+2024/08/01 22:50:37 DEBUG[017]: raft.DLogSummary{length:247, payload:"bbc580760051674068d8ee2ee6d76c5c"}
+2024/08/01 22:50:37 Server killed:2
+2024/08/01 22:50:37 DEBUG[002]: raft.DServerFMT{id:2, term:1, votedFor:1, commitIndex:246, lastApplied:246, voteCount:0, role:"Follower"}
+2024/08/01 22:50:37 DEBUG[002]: raft.DLogSummary{length:247, payload:"bbc580760051674068d8ee2ee6d76c5c"}
+2024/08/01 22:50:37 Server killed:3
+2024/08/01 22:50:37 DEBUG[029]: raft.DServerFMT{id:3, term:1, votedFor:4, commitIndex:246, lastApplied:246, voteCount:0, role:"Follower"}
+2024/08/01 22:50:37 DEBUG[029]: raft.DLogSummary{length:247, payload:"bbc580760051674068d8ee2ee6d76c5c"}
+2024/08/01 22:50:37 Server killed:4
+2024/08/01 22:50:37 DEBUG[829]: raft.DServerFMT{id:4, term:1, votedFor:4, commitIndex:246, lastApplied:246, voteCount:1, role:"Candidate"}
+2024/08/01 22:50:37 DEBUG[829]: raft.DLogSummary{length:247, payload:"bbc580760051674068d8ee2ee6d76c5c"}
+2024/08/01 22:50:37 server start: 0
+2024/08/01 22:50:37 DEBUG[201]: raft.DServerFMT{id:0, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:37 DEBUG[201]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:37 server start: 1
+2024/08/01 22:50:37 DEBUG[319]: raft.DServerFMT{id:1, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:37 DEBUG[319]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:37 server start: 2
+2024/08/01 22:50:37 DEBUG[662]: raft.DServerFMT{id:2, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:37 DEBUG[662]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:37 server start: 3
+2024/08/01 22:50:37 DEBUG[459]: raft.DServerFMT{id:3, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:37 DEBUG[459]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:37 server start: 4
+2024/08/01 22:50:37 DEBUG[174]: raft.DServerFMT{id:4, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:50:37 DEBUG[174]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+Test (3C): Figure 8 (unreliable) ...
+2024/08/01 22:50:37 New Leader Occured: 2
+2024/08/01 22:50:37 DEBUG[028]: raft.DServerFMT{id:2, term:1, votedFor:2, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:37 DEBUG[028]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:50:38 New Leader Occured: 4
+2024/08/01 22:50:38 DEBUG[276]: raft.DServerFMT{id:4, term:2, votedFor:4, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:38 DEBUG[276]: raft.DLogSummary{length:2, payload:"2bd077dd8d0d97afd81c7a6605526c5c"}
+2024/08/01 22:50:41 New Leader Occured: 0
+2024/08/01 22:50:41 DEBUG[901]: raft.DServerFMT{id:0, term:10, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:50:41 DEBUG[901]: raft.DLogSummary{length:3, payload:"33dad8d0cf30a69133520c346f65f9e8"}
+2024/08/01 22:50:43 New Leader Occured: 0
+2024/08/01 22:50:43 DEBUG[335]: raft.DServerFMT{id:0, term:14, votedFor:0, commitIndex:4, lastApplied:4, voteCount:3, role:"Leader"}
+2024/08/01 22:50:43 DEBUG[335]: raft.DLogSummary{length:26, payload:"c34ff96d7c4dbf0d1afdedc7c88694cf"}
+2024/08/01 22:50:43 DEBUG[171]: raft.DXConflict{id:3, role:"Follower", XTerm:14, XIndex:0, XLen:5, PrevLogIndex:25, PrevLogTerm:10, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:43 DEBUG[083]: raft.DXConflict{id:0, role:"Leader", XTerm:14, XIndex:0, XLen:5, PrevLogIndex:25, PrevLogTerm:10, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:43 DEBUG[431]: raft.DXConflict{id:1, role:"Follower", XTerm:14, XIndex:0, XLen:5, PrevLogIndex:25, PrevLogTerm:10, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:43 DEBUG[060]: raft.DXConflict{id:0, role:"Leader", XTerm:14, XIndex:0, XLen:5, PrevLogIndex:25, PrevLogTerm:10, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:50:43 New Leader Occured: 1
+2024/08/01 22:50:43 DEBUG[197]: raft.DServerFMT{id:1, term:15, votedFor:1, commitIndex:4, lastApplied:4, voteCount:3, role:"Leader"}
+2024/08/01 22:50:43 DEBUG[197]: raft.DLogSummary{length:30, payload:"6add7940a0813513e1ad8756bc60efaf"}
+2024/08/01 22:50:43 DEBUG[025]: raft.DXConflict{id:2, role:"Follower", XTerm:15, XIndex:1, XLen:0, PrevLogIndex:29, PrevLogTerm:14, ConflictLogMD5:"ff7d0f525b3be596a51fb919492c099c"}
+2024/08/01 22:50:43 DEBUG[284]: raft.DXConflict{id:1, role:"Leader", XTerm:15, XIndex:1, XLen:0, PrevLogIndex:29, PrevLogTerm:14, ConflictLogMD5:"ff7d0f525b3be596a51fb919492c099c"}
+2024/08/01 22:50:49 New Leader Occured: 2
+2024/08/01 22:50:49 DEBUG[326]: raft.DServerFMT{id:2, term:36, votedFor:2, commitIndex:4, lastApplied:4, voteCount:3, role:"Leader"}
+2024/08/01 22:50:49 DEBUG[326]: raft.DLogSummary{length:42, payload:"b77e576a98e43b1467b6321a4abed881"}
+2024/08/01 22:50:50 DEBUG[050]: raft.DXConflict{id:0, role:"Follower", XTerm:36, XIndex:26, XLen:0, PrevLogIndex:41, PrevLogTerm:15, ConflictLogMD5:"85f3375756047fba207ce9b85780313b"}
+2024/08/01 22:50:50 DEBUG[743]: raft.DXConflict{id:0, role:"Follower", XTerm:36, XIndex:26, XLen:0, PrevLogIndex:41, PrevLogTerm:15, ConflictLogMD5:"85f3375756047fba207ce9b85780313b"}
+2024/08/01 22:50:50 DEBUG[909]: raft.DXConflict{id:0, role:"Follower", XTerm:36, XIndex:26, XLen:0, PrevLogIndex:41, PrevLogTerm:15, ConflictLogMD5:"85f3375756047fba207ce9b85780313b"}
+2024/08/01 22:50:50 DEBUG[077]: raft.DXConflict{id:2, role:"Leader", XTerm:36, XIndex:26, XLen:0, PrevLogIndex:41, PrevLogTerm:15, ConflictLogMD5:"85f3375756047fba207ce9b85780313b"}
+2024/08/01 22:50:50 DEBUG[860]: raft.DXConflict{id:2, role:"Leader", XTerm:36, XIndex:26, XLen:0, PrevLogIndex:41, PrevLogTerm:15, ConflictLogMD5:"85f3375756047fba207ce9b85780313b"}
+2024/08/01 22:50:50 DEBUG[049]: raft.DXConflict{id:2, role:"Leader", XTerm:36, XIndex:26, XLen:0, PrevLogIndex:41, PrevLogTerm:15, ConflictLogMD5:"85f3375756047fba207ce9b85780313b"}
+2024/08/01 22:50:51 New Leader Occured: 3
+2024/08/01 22:50:51 DEBUG[054]: raft.DServerFMT{id:3, term:38, votedFor:3, commitIndex:4, lastApplied:4, voteCount:3, role:"Leader"}
+2024/08/01 22:50:51 DEBUG[054]: raft.DLogSummary{length:42, payload:"b77e576a98e43b1467b6321a4abed881"}
+2024/08/01 22:50:51 DEBUG[681]: raft.DXConflict{id:4, role:"Follower", XTerm:38, XIndex:2, XLen:0, PrevLogIndex:41, PrevLogTerm:15, ConflictLogMD5:"68897f19b106926ed889fe3f7e3d01c9"}
+2024/08/01 22:50:51 DEBUG[871]: raft.DXConflict{id:4, role:"Follower", XTerm:38, XIndex:2, XLen:0, PrevLogIndex:41, PrevLogTerm:15, ConflictLogMD5:"68897f19b106926ed889fe3f7e3d01c9"}
+2024/08/01 22:50:51 DEBUG[468]: raft.DXConflict{id:4, role:"Follower", XTerm:38, XIndex:2, XLen:0, PrevLogIndex:41, PrevLogTerm:15, ConflictLogMD5:"68897f19b106926ed889fe3f7e3d01c9"}
+2024/08/01 22:50:51 DEBUG[784]: raft.DXConflict{id:3, role:"Leader", XTerm:38, XIndex:2, XLen:0, PrevLogIndex:41, PrevLogTerm:15, ConflictLogMD5:"68897f19b106926ed889fe3f7e3d01c9"}
+2024/08/01 22:50:51 DEBUG[404]: raft.DXConflict{id:3, role:"Leader", XTerm:38, XIndex:2, XLen:0, PrevLogIndex:41, PrevLogTerm:15, ConflictLogMD5:"68897f19b106926ed889fe3f7e3d01c9"}
+2024/08/01 22:50:52 DEBUG[581]: raft.DXConflict{id:3, role:"Leader", XTerm:38, XIndex:2, XLen:0, PrevLogIndex:41, PrevLogTerm:15, ConflictLogMD5:"68897f19b106926ed889fe3f7e3d01c9"}
+2024/08/01 22:50:53 New Leader Occured: 0
+2024/08/01 22:50:53 DEBUG[969]: raft.DServerFMT{id:0, term:44, votedFor:0, commitIndex:4, lastApplied:4, voteCount:3, role:"Leader"}
+2024/08/01 22:50:53 DEBUG[969]: raft.DLogSummary{length:68, payload:"71015ab4406d48d20ca7e80e8275c409"}
+2024/08/01 22:50:53 DEBUG[033]: raft.DXConflict{id:2, role:"Follower", XTerm:44, XIndex:42, XLen:0, PrevLogIndex:67, PrevLogTerm:38, ConflictLogMD5:"74bba22728b6185eec06286af6bec36d"}
+2024/08/01 22:50:53 DEBUG[892]: raft.DXConflict{id:2, role:"Follower", XTerm:44, XIndex:42, XLen:0, PrevLogIndex:67, PrevLogTerm:38, ConflictLogMD5:"74bba22728b6185eec06286af6bec36d"}
+2024/08/01 22:50:53 DEBUG[446]: raft.DXConflict{id:0, role:"Leader", XTerm:44, XIndex:42, XLen:0, PrevLogIndex:67, PrevLogTerm:38, ConflictLogMD5:"3c3c139bd8467c1587a41081ad78045e"}
+2024/08/01 22:50:55 DEBUG[306]: raft.DXConflict{id:0, role:"Leader", XTerm:44, XIndex:42, XLen:0, PrevLogIndex:67, PrevLogTerm:38, ConflictLogMD5:"3c3c139bd8467c1587a41081ad78045e"}
+2024/08/01 22:50:56 New Leader Occured: 4
+2024/08/01 22:50:56 DEBUG[857]: raft.DServerFMT{id:4, term:54, votedFor:4, commitIndex:4, lastApplied:4, voteCount:3, role:"Leader"}
+2024/08/01 22:50:56 DEBUG[857]: raft.DLogSummary{length:69, payload:"889fa704479115707d973af9bc1e0fef"}
+2024/08/01 22:51:08 New Leader Occured: 0
+2024/08/01 22:51:08 DEBUG[939]: raft.DServerFMT{id:0, term:96, votedFor:0, commitIndex:68, lastApplied:68, voteCount:3, role:"Leader"}
+2024/08/01 22:51:08 DEBUG[939]: raft.DLogSummary{length:530, payload:"cc50911c7b0d93b5fec4c3d34acd72f4"}
+2024/08/01 22:51:08 DEBUG[183]: raft.DXConflict{id:1, role:"Follower", XTerm:96, XIndex:0, XLen:409, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:08 DEBUG[387]: raft.DXConflict{id:0, role:"Leader", XTerm:96, XIndex:0, XLen:409, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:08 DEBUG[884]: raft.DXConflict{id:2, role:"Follower", XTerm:96, XIndex:0, XLen:69, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:08 DEBUG[342]: raft.DXConflict{id:3, role:"Follower", XTerm:96, XIndex:0, XLen:170, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:08 DEBUG[217]: raft.DXConflict{id:4, role:"Follower", XTerm:96, XIndex:0, XLen:69, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:08 DEBUG[126]: raft.DXConflict{id:4, role:"Follower", XTerm:96, XIndex:0, XLen:69, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:08 DEBUG[943]: raft.DXConflict{id:2, role:"Follower", XTerm:96, XIndex:0, XLen:69, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:08 DEBUG[746]: raft.DXConflict{id:0, role:"Leader", XTerm:96, XIndex:0, XLen:69, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:08 DEBUG[331]: raft.DXConflict{id:1, role:"Follower", XTerm:96, XIndex:30, XLen:0, PrevLogIndex:408, PrevLogTerm:44, ConflictLogMD5:"d72fbbccd9fe64c3a14f85d225a046f4"}
+2024/08/01 22:51:08 DEBUG[413]: raft.DXConflict{id:3, role:"Follower", XTerm:96, XIndex:0, XLen:170, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:08 DEBUG[255]: raft.DXConflict{id:0, role:"Leader", XTerm:96, XIndex:0, XLen:170, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:08 DEBUG[727]: raft.DXConflict{id:3, role:"Follower", XTerm:96, XIndex:42, XLen:0, PrevLogIndex:169, PrevLogTerm:44, ConflictLogMD5:"3c3c139bd8467c1587a41081ad78045e"}
+2024/08/01 22:51:08 DEBUG[992]: raft.DXConflict{id:0, role:"Leader", XTerm:96, XIndex:42, XLen:0, PrevLogIndex:169, PrevLogTerm:44, ConflictLogMD5:"3c3c139bd8467c1587a41081ad78045e"}
+2024/08/01 22:51:08 DEBUG[885]: raft.DXConflict{id:4, role:"Follower", XTerm:96, XIndex:0, XLen:69, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:08 DEBUG[055]: raft.DXConflict{id:1, role:"Follower", XTerm:96, XIndex:30, XLen:0, PrevLogIndex:408, PrevLogTerm:44, ConflictLogMD5:"d72fbbccd9fe64c3a14f85d225a046f4"}
+2024/08/01 22:51:08 DEBUG[439]: raft.DXConflict{id:4, role:"Follower", XTerm:96, XIndex:0, XLen:69, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:08 DEBUG[169]: raft.DXConflict{id:1, role:"Follower", XTerm:96, XIndex:30, XLen:0, PrevLogIndex:408, PrevLogTerm:44, ConflictLogMD5:"d72fbbccd9fe64c3a14f85d225a046f4"}
+2024/08/01 22:51:08 DEBUG[711]: raft.DXConflict{id:4, role:"Follower", XTerm:96, XIndex:0, XLen:69, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:08 DEBUG[428]: raft.DXConflict{id:1, role:"Follower", XTerm:96, XIndex:30, XLen:0, PrevLogIndex:408, PrevLogTerm:44, ConflictLogMD5:"d72fbbccd9fe64c3a14f85d225a046f4"}
+2024/08/01 22:51:08 DEBUG[475]: raft.DXConflict{id:0, role:"Leader", XTerm:96, XIndex:0, XLen:170, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:08 DEBUG[187]: raft.DXConflict{id:0, role:"Leader", XTerm:96, XIndex:0, XLen:69, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:08 DEBUG[749]: raft.DXConflict{id:0, role:"Leader", XTerm:96, XIndex:30, XLen:0, PrevLogIndex:408, PrevLogTerm:44, ConflictLogMD5:"d72fbbccd9fe64c3a14f85d225a046f4"}
+2024/08/01 22:51:09 DEBUG[161]: raft.DXConflict{id:0, role:"Leader", XTerm:96, XIndex:30, XLen:0, PrevLogIndex:408, PrevLogTerm:44, ConflictLogMD5:"d72fbbccd9fe64c3a14f85d225a046f4"}
+2024/08/01 22:51:09 DEBUG[469]: raft.DXConflict{id:0, role:"Leader", XTerm:96, XIndex:0, XLen:69, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:09 DEBUG[217]: raft.DXConflict{id:0, role:"Leader", XTerm:96, XIndex:30, XLen:0, PrevLogIndex:408, PrevLogTerm:44, ConflictLogMD5:"d72fbbccd9fe64c3a14f85d225a046f4"}
+2024/08/01 22:51:09 DEBUG[599]: raft.DXConflict{id:0, role:"Leader", XTerm:96, XIndex:0, XLen:69, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:09 DEBUG[677]: raft.DXConflict{id:0, role:"Leader", XTerm:96, XIndex:0, XLen:69, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:10 DEBUG[991]: raft.DXConflict{id:0, role:"Leader", XTerm:96, XIndex:0, XLen:69, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+  ... Passed --  32.9  5 2732 5567654  530
+2024/08/01 22:51:10 Server killed:0
+2024/08/01 22:51:10 DEBUG[750]: raft.DServerFMT{id:0, term:96, votedFor:0, commitIndex:530, lastApplied:530, voteCount:3, role:"Leader"}
+2024/08/01 22:51:10 DEBUG[750]: raft.DLogSummary{length:531, payload:"40ccab0b118e382991470319058ab27c"}
+2024/08/01 22:51:10 Server killed:1
+2024/08/01 22:51:10 DEBUG[603]: raft.DServerFMT{id:1, term:96, votedFor:-1, commitIndex:530, lastApplied:530, voteCount:1, role:"Follower"}
+2024/08/01 22:51:10 DEBUG[603]: raft.DLogSummary{length:531, payload:"40ccab0b118e382991470319058ab27c"}
+2024/08/01 22:51:10 Server killed:2
+2024/08/01 22:51:10 DEBUG[188]: raft.DServerFMT{id:2, term:96, votedFor:0, commitIndex:530, lastApplied:530, voteCount:2, role:"Follower"}
+2024/08/01 22:51:10 DEBUG[188]: raft.DLogSummary{length:531, payload:"40ccab0b118e382991470319058ab27c"}
+2024/08/01 22:51:10 Server killed:3
+2024/08/01 22:51:10 DEBUG[332]: raft.DServerFMT{id:3, term:96, votedFor:0, commitIndex:530, lastApplied:530, voteCount:1, role:"Follower"}
+2024/08/01 22:51:10 DEBUG[332]: raft.DLogSummary{length:531, payload:"40ccab0b118e382991470319058ab27c"}
+2024/08/01 22:51:10 Server killed:4
+2024/08/01 22:51:10 DEBUG[518]: raft.DServerFMT{id:4, term:96, votedFor:0, commitIndex:530, lastApplied:530, voteCount:1, role:"Follower"}
+2024/08/01 22:51:10 DEBUG[518]: raft.DLogSummary{length:531, payload:"40ccab0b118e382991470319058ab27c"}
+2024/08/01 22:51:10 server start: 0
+2024/08/01 22:51:10 DEBUG[541]: raft.DServerFMT{id:0, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:10 DEBUG[541]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:51:10 server start: 1
+2024/08/01 22:51:10 DEBUG[263]: raft.DServerFMT{id:1, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:10 DEBUG[263]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:51:10 server start: 2
+2024/08/01 22:51:10 DEBUG[194]: raft.DServerFMT{id:2, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:10 DEBUG[194]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:51:10 server start: 3
+2024/08/01 22:51:10 DEBUG[865]: raft.DServerFMT{id:3, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:10 DEBUG[865]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:51:10 server start: 4
+2024/08/01 22:51:10 DEBUG[295]: raft.DServerFMT{id:4, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:10 DEBUG[295]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+Test (3C): churn ...
+2024/08/01 22:51:10 New Leader Occured: 0
+2024/08/01 22:51:10 DEBUG[471]: raft.DServerFMT{id:0, term:1, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:51:10 DEBUG[471]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:51:10 DEBUG[974]: raft.DXConflict{id:0, role:"Leader", XTerm:96, XIndex:0, XLen:69, PrevLogIndex:529, PrevLogTerm:44, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:13 New Leader Occured: 0
+2024/08/01 22:51:13 DEBUG[115]: raft.DServerFMT{id:0, term:7, votedFor:0, commitIndex:70, lastApplied:70, voteCount:3, role:"Leader"}
+2024/08/01 22:51:13 DEBUG[115]: raft.DLogSummary{length:74, payload:"aa4bdc30ba9e1db1c20486232f2bf405"}
+2024/08/01 22:51:13 DEBUG[462]: raft.DXConflict{id:4, role:"Follower", XTerm:7, XIndex:0, XLen:31, PrevLogIndex:73, PrevLogTerm:1, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:13 DEBUG[548]: raft.DXConflict{id:0, role:"Leader", XTerm:7, XIndex:0, XLen:31, PrevLogIndex:73, PrevLogTerm:1, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:15 New Leader Occured: 1
+2024/08/01 22:51:15 DEBUG[876]: raft.DServerFMT{id:1, term:8, votedFor:1, commitIndex:120, lastApplied:120, voteCount:3, role:"Leader"}
+2024/08/01 22:51:15 DEBUG[876]: raft.DLogSummary{length:124, payload:"a71ea7f89d0dab0ea3d8afdc51353603"}
+2024/08/01 22:51:16 Server killed:3
+2024/08/01 22:51:16 DEBUG[907]: raft.DServerFMT{id:3, term:8, votedFor:1, commitIndex:152, lastApplied:152, voteCount:0, role:"Follower"}
+2024/08/01 22:51:16 DEBUG[907]: raft.DLogSummary{length:155, payload:"665cbc14953d0d174d6fe0f319e121af"}
+2024/08/01 22:51:17 server start: 3
+2024/08/01 22:51:17 DEBUG[101]: raft.DServerFMT{id:3, term:8, votedFor:1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:17 DEBUG[101]: raft.DLogSummary{length:155, payload:"665cbc14953d0d174d6fe0f319e121af"}
+2024/08/01 22:51:20 Server killed:2
+2024/08/01 22:51:20 DEBUG[013]: raft.DServerFMT{id:2, term:8, votedFor:1, commitIndex:252, lastApplied:252, voteCount:0, role:"Follower"}
+2024/08/01 22:51:20 DEBUG[013]: raft.DLogSummary{length:256, payload:"e8fbce809967060452e5f9fc4b99a018"}
+2024/08/01 22:51:25 server start: 2
+2024/08/01 22:51:25 DEBUG[873]: raft.DServerFMT{id:2, term:8, votedFor:1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:25 DEBUG[873]: raft.DLogSummary{length:256, payload:"e8fbce809967060452e5f9fc4b99a018"}
+2024/08/01 22:51:25 New Leader Occured: 1
+2024/08/01 22:51:25 DEBUG[184]: raft.DServerFMT{id:1, term:30, votedFor:1, commitIndex:255, lastApplied:255, voteCount:3, role:"Leader"}
+2024/08/01 22:51:25 DEBUG[184]: raft.DLogSummary{length:298, payload:"3eb3927606ba5eab2249754b66d8a968"}
+2024/08/01 22:51:25 DEBUG[391]: raft.DXConflict{id:0, role:"Follower", XTerm:30, XIndex:0, XLen:283, PrevLogIndex:297, PrevLogTerm:8, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:25 DEBUG[523]: raft.DXConflict{id:4, role:"Follower", XTerm:30, XIndex:0, XLen:262, PrevLogIndex:297, PrevLogTerm:8, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:25 DEBUG[180]: raft.DXConflict{id:3, role:"Follower", XTerm:30, XIndex:0, XLen:196, PrevLogIndex:297, PrevLogTerm:8, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:25 DEBUG[240]: raft.DXConflict{id:1, role:"Leader", XTerm:30, XIndex:0, XLen:283, PrevLogIndex:297, PrevLogTerm:8, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:25 DEBUG[420]: raft.DXConflict{id:1, role:"Leader", XTerm:30, XIndex:0, XLen:262, PrevLogIndex:297, PrevLogTerm:8, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:25 DEBUG[476]: raft.DXConflict{id:1, role:"Leader", XTerm:30, XIndex:0, XLen:196, PrevLogIndex:297, PrevLogTerm:8, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:25 DEBUG[994]: raft.DXConflict{id:0, role:"Follower", XTerm:30, XIndex:74, XLen:0, PrevLogIndex:282, PrevLogTerm:8, ConflictLogMD5:"da0ec7e0436c526c84614f94d3d0ae62"}
+2024/08/01 22:51:25 DEBUG[048]: raft.DXConflict{id:1, role:"Leader", XTerm:30, XIndex:74, XLen:0, PrevLogIndex:282, PrevLogTerm:8, ConflictLogMD5:"da0ec7e0436c526c84614f94d3d0ae62"}
+  ... Passed --  16.4  5 1112 1416111  298
+2024/08/01 22:51:26 Server killed:0
+2024/08/01 22:51:26 DEBUG[974]: raft.DServerFMT{id:0, term:30, votedFor:1, commitIndex:298, lastApplied:298, voteCount:1, role:"Follower"}
+2024/08/01 22:51:26 DEBUG[974]: raft.DLogSummary{length:299, payload:"6d629885fd644abe2e77b57597041a3a"}
+2024/08/01 22:51:26 Server killed:1
+2024/08/01 22:51:26 DEBUG[881]: raft.DServerFMT{id:1, term:30, votedFor:1, commitIndex:298, lastApplied:298, voteCount:3, role:"Leader"}
+2024/08/01 22:51:26 DEBUG[881]: raft.DLogSummary{length:299, payload:"6d629885fd644abe2e77b57597041a3a"}
+2024/08/01 22:51:26 Server killed:2
+2024/08/01 22:51:26 DEBUG[305]: raft.DServerFMT{id:2, term:30, votedFor:1, commitIndex:298, lastApplied:298, voteCount:0, role:"Follower"}
+2024/08/01 22:51:26 DEBUG[305]: raft.DLogSummary{length:299, payload:"6d629885fd644abe2e77b57597041a3a"}
+2024/08/01 22:51:26 Server killed:3
+2024/08/01 22:51:26 DEBUG[764]: raft.DServerFMT{id:3, term:30, votedFor:1, commitIndex:298, lastApplied:298, voteCount:2, role:"Follower"}
+2024/08/01 22:51:26 DEBUG[764]: raft.DLogSummary{length:299, payload:"6d629885fd644abe2e77b57597041a3a"}
+2024/08/01 22:51:26 Server killed:4
+2024/08/01 22:51:26 DEBUG[726]: raft.DServerFMT{id:4, term:30, votedFor:1, commitIndex:298, lastApplied:298, voteCount:1, role:"Follower"}
+2024/08/01 22:51:26 DEBUG[726]: raft.DLogSummary{length:299, payload:"6d629885fd644abe2e77b57597041a3a"}
+2024/08/01 22:51:26 server start: 0
+2024/08/01 22:51:26 DEBUG[729]: raft.DServerFMT{id:0, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:26 DEBUG[729]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:51:26 server start: 1
+2024/08/01 22:51:26 DEBUG[493]: raft.DServerFMT{id:1, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:26 DEBUG[493]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:51:26 server start: 2
+2024/08/01 22:51:26 DEBUG[546]: raft.DServerFMT{id:2, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:26 DEBUG[546]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:51:26 server start: 3
+2024/08/01 22:51:26 DEBUG[345]: raft.DServerFMT{id:3, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:26 DEBUG[345]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:51:26 server start: 4
+2024/08/01 22:51:26 DEBUG[913]: raft.DServerFMT{id:4, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:26 DEBUG[913]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+Test (3C): unreliable churn ...
+2024/08/01 22:51:26 Server killed:1
+2024/08/01 22:51:26 DEBUG[095]: raft.DServerFMT{id:1, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:26 DEBUG[095]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:51:27 New Leader Occured: 0
+2024/08/01 22:51:27 DEBUG[627]: raft.DServerFMT{id:0, term:1, votedFor:0, commitIndex:0, lastApplied:0, voteCount:3, role:"Leader"}
+2024/08/01 22:51:27 DEBUG[627]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:51:27 Server killed:2
+2024/08/01 22:51:27 DEBUG[680]: raft.DServerFMT{id:2, term:1, votedFor:0, commitIndex:6, lastApplied:6, voteCount:0, role:"Follower"}
+2024/08/01 22:51:27 DEBUG[680]: raft.DLogSummary{length:8, payload:"f565efb9c783f687ea45a087ec1eb48c"}
+2024/08/01 22:51:28 New Leader Occured: 0
+2024/08/01 22:51:28 DEBUG[692]: raft.DServerFMT{id:0, term:3, votedFor:0, commitIndex:27, lastApplied:27, voteCount:3, role:"Leader"}
+2024/08/01 22:51:28 DEBUG[692]: raft.DLogSummary{length:31, payload:"17499475f35e0fb39684bf6b2b2db24a"}
+2024/08/01 22:51:28 DEBUG[519]: raft.DXConflict{id:3, role:"Follower", XTerm:3, XIndex:0, XLen:28, PrevLogIndex:30, PrevLogTerm:1, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:28 DEBUG[377]: raft.DXConflict{id:0, role:"Leader", XTerm:3, XIndex:0, XLen:28, PrevLogIndex:30, PrevLogTerm:1, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:37 Server killed:4
+2024/08/01 22:51:37 DEBUG[198]: raft.DServerFMT{id:4, term:3, votedFor:0, commitIndex:165, lastApplied:165, voteCount:0, role:"Follower"}
+2024/08/01 22:51:37 DEBUG[198]: raft.DLogSummary{length:169, payload:"d0aa5f36889e5014cda9bfffcec17516"}
+2024/08/01 22:51:38 Server killed:3
+2024/08/01 22:51:38 DEBUG[403]: raft.DServerFMT{id:3, term:3, votedFor:0, commitIndex:168, lastApplied:168, voteCount:1, role:"Follower"}
+2024/08/01 22:51:38 DEBUG[403]: raft.DLogSummary{length:181, payload:"909fbe102cde6cabde9e1b67ac2f316d"}
+2024/08/01 22:51:40 server start: 3
+2024/08/01 22:51:40 DEBUG[859]: raft.DServerFMT{id:3, term:3, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:40 DEBUG[859]: raft.DLogSummary{length:181, payload:"909fbe102cde6cabde9e1b67ac2f316d"}
+2024/08/01 22:51:41 server start: 1
+2024/08/01 22:51:41 DEBUG[739]: raft.DServerFMT{id:1, term:0, votedFor:-1, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:41 DEBUG[739]: raft.DLogSummary{length:1, payload:"757a52f5b7d9c93f4ae8860a6dd3649d"}
+2024/08/01 22:51:41 server start: 2
+2024/08/01 22:51:41 DEBUG[770]: raft.DServerFMT{id:2, term:1, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:41 DEBUG[770]: raft.DLogSummary{length:8, payload:"f565efb9c783f687ea45a087ec1eb48c"}
+2024/08/01 22:51:41 server start: 4
+2024/08/01 22:51:41 DEBUG[142]: raft.DServerFMT{id:4, term:3, votedFor:0, commitIndex:0, lastApplied:0, voteCount:0, role:"Follower"}
+2024/08/01 22:51:41 DEBUG[142]: raft.DLogSummary{length:169, payload:"d0aa5f36889e5014cda9bfffcec17516"}
+2024/08/01 22:51:41 DEBUG[730]: raft.DXConflict{id:1, role:"Follower", XTerm:3, XIndex:0, XLen:1, PrevLogIndex:30, PrevLogTerm:1, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:41 DEBUG[118]: raft.DXConflict{id:2, role:"Follower", XTerm:3, XIndex:0, XLen:8, PrevLogIndex:30, PrevLogTerm:1, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:41 DEBUG[108]: raft.DXConflict{id:0, role:"Leader", XTerm:3, XIndex:0, XLen:1, PrevLogIndex:30, PrevLogTerm:1, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+2024/08/01 22:51:41 DEBUG[772]: raft.DXConflict{id:0, role:"Leader", XTerm:3, XIndex:0, XLen:8, PrevLogIndex:30, PrevLogTerm:1, ConflictLogMD5:"acf3985512530e31d8204b9f7a5ac198"}
+  ... Passed --  16.3  5  644  794600  205
+2024/08/01 22:51:42 Server killed:0
+2024/08/01 22:51:42 DEBUG[522]: raft.DServerFMT{id:0, term:3, votedFor:0, commitIndex:205, lastApplied:205, voteCount:3, role:"Leader"}
+2024/08/01 22:51:42 DEBUG[522]: raft.DLogSummary{length:206, payload:"c383c01b8855747bfb3ad365418ac220"}
+2024/08/01 22:51:42 Server killed:1
+2024/08/01 22:51:42 DEBUG[594]: raft.DServerFMT{id:1, term:3, votedFor:-1, commitIndex:205, lastApplied:205, voteCount:0, role:"Follower"}
+2024/08/01 22:51:42 DEBUG[594]: raft.DLogSummary{length:206, payload:"c383c01b8855747bfb3ad365418ac220"}
+2024/08/01 22:51:42 Server killed:2
+2024/08/01 22:51:42 DEBUG[787]: raft.DServerFMT{id:2, term:3, votedFor:-1, commitIndex:205, lastApplied:205, voteCount:0, role:"Follower"}
+2024/08/01 22:51:42 DEBUG[787]: raft.DLogSummary{length:206, payload:"c383c01b8855747bfb3ad365418ac220"}
+2024/08/01 22:51:42 Server killed:3
+2024/08/01 22:51:42 DEBUG[562]: raft.DServerFMT{id:3, term:3, votedFor:0, commitIndex:205, lastApplied:205, voteCount:0, role:"Follower"}
+2024/08/01 22:51:42 DEBUG[562]: raft.DLogSummary{length:206, payload:"c383c01b8855747bfb3ad365418ac220"}
+2024/08/01 22:51:42 Server killed:4
+2024/08/01 22:51:42 DEBUG[730]: raft.DServerFMT{id:4, term:3, votedFor:0, commitIndex:205, lastApplied:205, voteCount:0, role:"Follower"}
+2024/08/01 22:51:42 DEBUG[730]: raft.DLogSummary{length:206, payload:"c383c01b8855747bfb3ad365418ac220"}
+PASS
+ok  	6.5840/raft	123.745s
